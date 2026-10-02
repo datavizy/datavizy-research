@@ -1,4 +1,6 @@
-# Logic Notes
+# DataVizy Research
+
+What can a join do to your measurements? When does a plot tell a useful story? Explore the reasoning behind reliable data analysis, one worked example at a time.
 
 Original educational research notes from a technical reading practice. Data visualization, statistical reasoning, and reproducible scientific analysis.
 

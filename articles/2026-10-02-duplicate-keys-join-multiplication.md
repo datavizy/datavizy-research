@@ -1,6 +1,6 @@
 # Duplicate Keys, Join Multiplication, and the Meaning of a Row
 
-A join can add useful context to a dataset—or quietly change how many records it contains. The risk is especially easy to miss when join keys repeat. A table may have repeated keys because several real observations share a category, because a record was accidentally copied, or because the chosen key does not uniquely identify an entity. Those situations look similar in a spreadsheet, but they have different meanings and require different fixes.
+You start with four laboratory readings, add a station lookup, and end up with six rows. Where did the extra two come from? A join can enrich a dataset while quietly multiplying its records, especially when join keys repeat. Those repeated keys might describe several real observations in one category, an accidentally copied record, or a key that leaves out part of an entity's identity. The spreadsheet may look tidy in all three cases. The meaning of its rows is what tells us how to proceed.
 
 Section 10.1.5, “Duplicated Keys,” of *Data Science Fundamentals with R, Python, and Open Data* uses two linked tables to explain this distinction. Its central lesson is that joins preserve rows according to matching relationships, not according to a researcher’s unstated idea of what a row ought to represent. This article develops that lesson through join cardinality, a worked example, and a practical validation workflow.
 
@@ -18,11 +18,11 @@ These categories overlap but are not interchangeable. Two purchases by one custo
 
 The source section first demonstrates repeated records on the left side of a join. Some are similar but differ in purchase details; one pair is identical. Joining each purchase to a city-to-country lookup preserves those six left-side records when each city has a single lookup match. That is the intended behavior: enriching a transaction does not itself require transactions to be unique.
 
-## Why joins can multiply rows
+## Where the extra rows come from
 
 A join matches rows by key. If a left-side key appears $m$ times and its matching right-side key appears $n$ times, the matched key contributes $m \times n$ output rows in a standard relational join. Each left row is paired with every right row that has the same key.
 
-For example, if one purchase row has a city key that matches three lookup records, the join produces three versions of that purchase row. If two left rows share that city and the right side has three matches, the key group produces $2 \times 3 = 6$ joined rows. This is not a software glitch: it is the result of the matching rule.
+Try a small count: one purchase row has a city key that matches three lookup records, so the join produces three versions of that purchase row. Now give the left table two rows for that city. With three matches on the right, the key group produces $2 \times 3 = 6$ joined rows. The join is doing exactly what its matching rule asks.
 
 A left join also retains left rows that have no right-side match, typically with missing values in the right-side columns. An inner join drops unmatched left rows. When every left-side key has exactly one right-side match, these join types return the same left-row count and matched values. The source’s initial example has that property. Once keys are duplicated or missing, the distinction matters.
 
@@ -53,7 +53,7 @@ The repeated S7 row might be a duplicated lookup record, or it might reflect a r
 
 Check the arithmetic another way: there are two S7 observations, each with two matches, contributing four rows. There are two S9 observations, each with one match, contributing two. Thus $4 + 2 = 6$. The readings table still contains four observations. The extra two joined rows arise from the lookup’s repeated key.
 
-Before treating those extra rows as errors, determine the lookup’s intended grain. If it should contain one row per station and the two S7 records are accidental copies, deduplicating the lookup on its complete set of relevant fields may be appropriate. If those rows represent different station periods, instruments, or regions, the key is incomplete. Add the missing matching condition—such as a valid date range—or resolve the ambiguity according to the data model. Simply keeping an arbitrary first match would hide the problem.
+Before treating those extra rows as errors, determine the lookup’s intended grain. If it should contain one row per station and the two S7 records are accidental copies, deduplicating the lookup on its complete set of relevant fields may be appropriate. If those rows represent different station periods, instruments, or regions, the key is incomplete. Add the missing matching condition, such as a valid date range, or resolve the ambiguity according to the data model. Simply keeping an arbitrary first match would hide the problem.
 
 The observation ID is also important. It distinguishes R101 from R102 even though their station and measurements could, in some dataset, happen to be identical. A stable identifier makes it possible to verify that the four original observations remain represented after enrichment.
 
@@ -67,7 +67,7 @@ The source proposes adding a unique row identifier to distinguish logically dist
 
 ## A reproducible join audit
 
-Before joining, write down the intended grain of each table: what one row represents, and which columns identify it. Then check the supposed unique key on the lookup side. Count its occurrences and list keys with more than one match. Also check for missing keys, whitespace or capitalization inconsistencies, and differences in types or units.
+Before joining, pause for a useful question: what does one row represent? Write down the intended grain of each table and the columns that identify it. Then give the lookup key a quick audit. Count its occurrences and list keys with more than one match. Check for missing keys, whitespace or capitalization inconsistencies, and differences in types or units. A few small checks now can save a much longer investigation later.
 
 After joining, validate both row counts and identities. For a many-to-one enrichment, the output should normally contain one row per input observation; if it does not, investigate before continuing. Compare the set and count of observation IDs before and after. Check unmatched-key counts as well as multiply matched keys. Keep a small diagnostic summary in the analysis output so another researcher can reproduce the decision.
 
@@ -75,7 +75,7 @@ Do not assume that a join is one-to-one because the column names sound like iden
 
 ## Applications and assumptions
 
-These principles apply to merging clinical measurements with patient metadata, adding geographic classifications to survey responses, connecting products to categories, or attaching calibration information to instrument readings. In each case, the intended relationship determines the expected cardinality. A patient may have many measurements, while a patient metadata table may be intended to have one current record—or several historical records keyed by time.
+These principles apply to merging clinical measurements with patient metadata, adding geographic classifications to survey responses, connecting products to categories, or attaching calibration information to instrument readings. In each case, the intended relationship determines the expected cardinality. A patient may have many measurements, while a patient metadata table may be intended to have one current record or several historical records keyed by time.
 
 The arithmetic above assumes ordinary equality matching on the stated key and that each matching right row contributes an output row. Specific libraries can differ in their handling of null keys, relationship warnings, or ordering. Check the documentation for the tool you use, and test a minimal example when behavior matters. The general diagnostic remains: count matches per key, then reason about how those counts affect each input row.
 
@@ -103,7 +103,7 @@ The arithmetic above assumes ordinary equality matching on the stated key and th
 
 ## The practical rule
 
-A join’s output is governed by key multiplicities, while a dataset’s meaning is governed by what its rows represent. Record both. Verify key uniqueness where uniqueness is expected, calculate the match multiplicities, preserve identifiers for distinct observations, and investigate before removing rows. That turns a potentially silent row explosion—or a destructive deduplication—into an explicit, testable data decision.
+Keep two questions close at hand: how many matches does each key have, and what does each row represent? Verify uniqueness where you expect it, calculate the match counts, preserve observation identifiers, and investigate before removing rows. Once those checks are routine, four readings becoming six rows is a puzzle you can explain. The same habit helps you catch a silent row explosion or a destructive deduplication before it changes your analysis.
 
 ---
 

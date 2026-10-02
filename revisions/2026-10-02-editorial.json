@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "policy_id": "traditional-punctuation-engaging-technical-v1",
+  "research_title": "DataVizy Research",
+  "repository": "datavizy/datavizy-research",
+  "previous_repository": "datavizy/logic-notes",
+  "changes": [
+    "Traditional punctuation; no em dashes.",
+    "More inviting introductions, transitions, and practical reading guidance.",
+    "Updated research collection name and portfolio links."
+  ],
+  "validation": {
+    "em_dash_check": "passed",
+    "technical_examples_preserved": true,
+    "article_words": 1851,
+    "existing_tools_and_tests_unchanged": true
+  },
+  "documents": [
+    {
+      "path": "README.md",
+      "before_sha256": "8c0ebad286d36f97f4e0c9f7f452d8ec2a4eb17b78f98715b618b387f129d033",
+      "after_sha256": "6130bb5c5f576b3b2ea24bd8f40d09c9e27ba1242bb675b962ea8d052d0d4b96"
+    },
+    {
+      "path": "articles/2026-10-02-duplicate-keys-join-multiplication.md",
+      "before_sha256": "dffedc2a959e0c29fa748867b3cd42c33c66836c529ced1ba7582b00464a3ca7",
+      "after_sha256": "268f4688da920993e8c0f30907dd61913ebc0e2e1aacc9030b1c6da5869fc485"
+    }
+  ]
+}
