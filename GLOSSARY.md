@@ -44,3 +44,50 @@ A key value in one table for which no corresponding value exists in the other ta
 ### Finite numeric observation
 
 A numeric value that is neither missing nor infinite nor NaN. Visualization and statistical routines often cannot use such values directly; handling them explicitly makes the analyzed sample size and omissions easier to report.
+
+
+<!-- publication:2026-10-05 -->
+
+## 2026-10-05
+
+Source note: [2026-10-05](articles/2026-10-05-from-events-to-evidence-discrete-probability.md).
+
+### Outcome space
+
+The set of all possible outcomes in a probability model, often written as $\Omega$. In the discrete setting discussed here it is finite or countably infinite. Defining the space clearly prevents ambiguity about what the model treats as a possible result.
+
+### Event
+
+A subset of the outcome space. Its probability is the total probability assigned to its outcomes. Events can overlap, be disjoint, or contain one another, and these relationships determine how their probabilities combine.
+
+### Probability measure
+
+A function assigning probabilities to events, with probability zero for the empty event, probability one for the whole space, and countable additivity over disjoint events. For a discrete model, point probabilities determine the measure.
+
+### Countable additivity
+
+The rule that the probability of a countable union of pairwise disjoint events equals the sum of their probabilities. It is a core probability axiom and supports calculations that partition outcomes into non-overlapping cases.
+
+### Conditional probability
+
+The probability of an event $D$ given an event $C$ known to have occurred, defined as $P(C\cap D)/P(C)$ when $P(C)>0$. It restricts attention to outcomes inside $C$ and renormalizes their probabilities.
+
+### Independence
+
+A relationship between events in which their joint probability factors as the product of their probabilities. For two events, $P(C\cap D)=P(C)P(D)$. Mutual independence of a collection requires this factorization for every finite subcollection.
+
+### Random variable
+
+A function from outcomes to real numbers. It makes a numerical feature of a random experiment available for analysis, such as a count or measurement, and induces a distribution over its possible values.
+
+### Expectation
+
+The probability-weighted average of a random variable's values, defined in the discrete case by $E[X]=\sum_x xP(X=x)$ when the absolute expectation is finite. It summarizes a model and need not be a value observed in any one trial.
+
+### Variance
+
+The expected squared deviation from the mean, $E[(X-E[X])^2]$, when defined. It summarizes dispersion in squared units. Its square root, the standard deviation, is expressed in the original units of the variable.
+
+### Relative entropy
+
+A distribution-comparison quantity $H(Q\mid P)=\sum_x Q(x)\log(Q(x)/P(x))$ for discrete measures, with appropriate support and convergence conventions. It is generally asymmetric and is not an ordinary distance.
