@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-08",
+  "article": "articles/2026-10-08-where-names-live-environments-scope-reproducible-analysis.md",
+  "terms": [
+    {
+      "term": "Environment",
+      "definition": "An R structure that associates names with objects and participates in name lookup. The compartment metaphor is helpful for learning, but environments technically hold bindings or references rather than acting as literal boxes containing all object data."
+    },
+    {
+      "term": "Binding",
+      "definition": "An association between a name and an object in an environment. Assigning a value commonly establishes or changes a binding; understanding bindings helps distinguish where a name is defined from the internal contents of the object it refers to."
+    },
+    {
+      "term": "Global environment",
+      "definition": "The primary workspace environment for user-created or user-assigned names in an R session. `ls()` without an environment argument typically lists names there, not every function available through attached packages."
+    },
+    {
+      "term": "Local environment",
+      "definition": "The environment associated with a function call. It contains the function’s arguments and local definitions, allowing common names to be used without automatically replacing identically named objects in the caller’s workspace."
+    },
+    {
+      "term": "Lexical scoping",
+      "definition": "R’s approach to resolving names by considering the environment where code is defined and the connected environments used for lookup. Local definitions take precedence in the relevant lookup context, while unresolved names may be found outside the local call."
+    },
+    {
+      "term": "Namespace",
+      "definition": "A package-related structure that controls function visibility and relationships such as imports. A package’s user-visible names do not necessarily expose all its internal support functions or fully describe its namespace implementation."
+    },
+    {
+      "term": "Name masking",
+      "definition": "A situation in which one available definition of a name takes precedence over another during lookup, often because of the search path or local definitions. Package-qualified calls can make the intended function explicit."
+    },
+    {
+      "term": "Pearson correlation",
+      "definition": "A statistic that summarizes the direction and strength of linear association between paired numerical variables. It ranges from -1 to 1 when defined, but does not by itself establish causation or detect every nonlinear relationship."
+    },
+    {
+      "term": "Least-squares line",
+      "definition": "A line of the form $\\hat{y}=b_0+b_1x$ whose coefficients minimize the sum of squared residuals for the observed pairs. Its slope and intercept summarize a linear fit, but do not prove that a linear model is adequate."
+    },
+    {
+      "term": "Reproducibility",
+      "definition": "The ability to inspect and rerun an analysis with its inputs, steps, and relevant context made sufficiently explicit. Avoiding hidden dependence on an interactive global workspace is one practical contribution to reproducibility."
+    }
+  ]
+}
