@@ -138,3 +138,46 @@ A line of the form $\hat{y}=b_0+b_1x$ whose coefficients minimize the sum of squ
 ### Reproducibility
 
 The ability to inspect and rerun an analysis with its inputs, steps, and relevant context made sufficiently explicit. Avoiding hidden dependence on an interactive global workspace is one practical contribution to reproducibility.
+
+
+<!-- publication:2026-10-09 -->
+
+## 2026-10-09
+
+Source note: [2026-10-09](articles/2026-10-09-learning-resources-reproducible-plots.md).
+
+### Working directory
+
+The directory a command or program uses as its base for relative file paths. Knowing it helps explain why a data path resolves in one invocation but not another, and it makes project instructions more repeatable.
+
+### Project-local environment
+
+An isolated Python environment created for a particular project, with its own installed packages. It reduces conflicts with other projects and makes dependencies easier to document, though it does not by itself capture every detail of a computational system.
+
+### CSV
+
+A text-based table format in which rows are records and fields are separated by commas. A header row can give field names. CSV is convenient for exchange, but it does not inherently preserve types, units, or all metadata needed to interpret measurements.
+
+### Scatter plot
+
+A graph that represents paired numeric observations as points on horizontal and vertical axes. It can help reveal association, clusters, outliers, or changing spread, but it does not alone establish causality or statistical significance.
+
+### Histogram
+
+A display of a numeric variable in intervals called bins, with bar heights representing counts in those intervals. Its appearance depends partly on bin choices, so binning decisions matter when interpreting a distribution.
+
+### Finite numeric value
+
+A number that can be represented as a finite floating-point value, excluding values such as `NaN`, positive infinity, and negative infinity. The documented utility omits rows with nonfinite values in the fields required for the chosen plot.
+
+### Omitted row
+
+An input CSV row that the plotting utility cannot use because a required plotted field is blank, nonnumeric, or nonfinite. The count reports what happened during plotting; it does not explain the missingness or determine whether exclusion is statistically appropriate.
+
+### Descriptive analysis
+
+A summary or display that characterizes observed data, such as a mean, slope, scatter plot, or histogram. Descriptive results do not automatically support conclusions about statistical significance, causation, or a wider population.
+
+### Ordinary least-squares slope
+
+For a simple linear fit with an intercept, the slope is the sum of cross-products of centered x and y values divided by the sum of squared centered x values. It describes a fitted linear relationship in the analyzed data and is not by itself a causal effect.
