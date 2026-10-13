@@ -181,3 +181,50 @@ A summary or display that characterizes observed data, such as a mean, slope, sc
 ### Ordinary least-squares slope
 
 For a simple linear fit with an intercept, the slope is the sum of cross-products of centered x and y values divided by the sum of squared centered x values. It describes a fitted linear relationship in the analyzed data and is not by itself a causal effect.
+
+
+<!-- publication:2026-10-13 -->
+
+## 2026-10-13
+
+Source note: [2026-10-13](articles/2026-10-13-scraped-data-to-honest-visual-evidence.md).
+
+### Directed interaction
+
+A relationship represented from one entity to another, such as an author quoting a second user. Direction matters: an interaction from A to B does not imply an equivalent interaction from B to A.
+
+### Operational definition
+
+A precise rule that turns an abstract idea into something observable or countable. Defining forum interaction as a reply or quotation creates a measurable variable, while also limiting what conclusions that variable can support.
+
+### Heat map
+
+A matrix-style visualization in which color encodes a value in each cell. It can reveal patterns in counts or measurements, but readers need labeled axes, a clear scale, and a definition of the encoded quantity.
+
+### Dimensionality reduction
+
+A family of methods that maps data with many features into fewer dimensions, often two for visualization. The reduced view necessarily simplifies the data and may distort some relationships.
+
+### t-SNE
+
+A nonlinear dimensionality-reduction method commonly used to visualize high-dimensional data by emphasizing local neighborhood structure. Its two-dimensional layout is exploratory; apparent global distances or clusters should not be treated as validated categories.
+
+### Feature vector
+
+An ordered list of numeric values representing one observation for analysis. Flattened image pixels can form a feature vector, but this representation may reflect color, alignment, and background as well as the object of interest.
+
+### Percentile bootstrap
+
+A resampling method that repeatedly draws observations with replacement, calculates a statistic for each resample, and uses selected quantiles of those statistics as interval endpoints. Its reliability depends on the sample and whether the resampling scheme matches the data structure.
+
+### Sample standard deviation
+
+A measure of spread calculated from deviations around the sample mean using $n-1$ in the denominator. It estimates variability in a sample and is undefined for a single observation.
+
+### Nonfinite value
+
+A parsed numeric value that is not finite, such as NaN or positive infinity. Many statistical summaries cannot meaningfully use such values, so they should be identified and handled explicitly rather than silently treated as ordinary measurements.
+
+### Reproducible analysis
+
+An analysis whose inputs, transformations, and settings are recorded sufficiently for another person to repeat the procedure and inspect the result. A fixed random seed helps with random procedures but cannot compensate for missing data provenance or undocumented cleaning.
