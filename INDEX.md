@@ -7,3 +7,4 @@
 | 2026-10-08 | [Where Names Live: Environments, Scope, and Reproducible Analysis](articles/2026-10-08-where-names-live-environments-scope-reproducible-analysis.md) | statistical analysis and exploratory research | <!-- publication:2026-10-08 -->
 | 2026-10-09 | [From Learning Resources to Reproducible Plots](articles/2026-10-09-learning-resources-reproducible-plots.md) | data visualization and scientific communication | <!-- publication:2026-10-09 -->
 | 2026-10-13 | [From Scraped Records to Honest Visual Evidence](articles/2026-10-13-scraped-data-to-honest-visual-evidence.md) | statistics and reproducible research | <!-- publication:2026-10-13 -->
+| 2026-10-14 | [Reading the Surface: What Black–Scholes–Merton Call Greeks Tell You](articles/2026-10-14-reading-black-scholes-merton-call-greeks.md) | analytics and data quality | <!-- publication:2026-10-14 -->
