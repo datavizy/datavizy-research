@@ -228,3 +228,50 @@ A parsed numeric value that is not finite, such as NaN or positive infinity. Man
 ### Reproducible analysis
 
 An analysis whose inputs, transformations, and settings are recorded sufficiently for another person to repeat the procedure and inspect the result. A fixed random seed helps with random procedures but cannot compensate for missing data provenance or undocumented cleaning.
+
+
+<!-- publication:2026-10-14 -->
+
+## 2026-10-14
+
+Source note: [2026-10-14](articles/2026-10-14-reading-black-scholes-merton-call-greeks.md).
+
+### Black–Scholes–Merton model
+
+A model for pricing European options under assumptions that include constant volatility and a constant risk-free rate. The call formulas discussed here use no dividend yield. Its outputs depend on those assumptions and should not be treated as direct observations of market behavior.
+
+### Greek
+
+A partial derivative of an option's model value with respect to an input such as underlying price, time, volatility, or interest rate. Greeks describe local sensitivity while other inputs are held fixed, so they are approximations for small changes.
+
+### Delta
+
+The derivative of option value with respect to the underlying price. For a standard BSM European call it equals $N(d_1)$. It gives a local price sensitivity, not a constant hedge ratio across all market conditions.
+
+### Gamma
+
+The derivative of delta with respect to the underlying price, or equivalently the second derivative of option value with respect to that price. It indicates how quickly delta changes and can become large near expiry around the strike.
+
+### Theta
+
+A time sensitivity whose sign depends on convention. In the formula presented, theta measures change per year as valuation time advances with maturity fixed. Its value depends on the model inputs and is not universally negative.
+
+### Vega
+
+The derivative of option value with respect to volatility. When volatility is represented as a decimal, a one-percentage-point change is a change of 0.01, so the approximate price response is 0.01 times vega.
+
+### Rho
+
+The derivative of option value with respect to the risk-free rate. With the rate expressed as a decimal, a one-percentage-point rate change corresponds to a 0.01 change in the input and an approximate price response of 0.01 times rho.
+
+### Time to maturity
+
+The remaining life of an option, written $\tau=T-t$ when $t$ is valuation time and $T$ is maturity. It appears in the BSM formulas through terms such as $\sqrt{\tau}$ and must be positive for the displayed Greek formulas.
+
+### Standard normal CDF
+
+The function $N(x)$ gives the probability that a standard normally distributed random variable is less than or equal to $x$. It appears in the BSM call delta and in the discounted-strike component of the call formulas.
+
+### Probability density function
+
+The standard normal density, written $\phi(x)$, gives the density value at $x$. In the BSM call formulas it appears in gamma, theta, and vega, and is distinct from the cumulative probability $N(x)$.
