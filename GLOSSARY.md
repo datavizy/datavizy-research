@@ -275,3 +275,46 @@ The function $N(x)$ gives the probability that a standard normally distributed r
 ### Probability density function
 
 The standard normal density, written $\phi(x)$, gives the density value at $x$. In the BSM call formulas it appears in gamma, theta, and vega, and is distinct from the cumulative probability $N(x)$.
+
+
+<!-- publication:2026-10-15 -->
+
+## 2026-10-15
+
+Source note: [2026-10-15](articles/2026-10-15-editing-matrices-without-losing-track-of-their-shape.md).
+
+### Matrix
+
+A two-dimensional R object whose elements all have a common atomic type. A matrix is stored as a vector with a dimension attribute, which helps explain why subsetting can simplify it to a vector when one dimension has length one.
+
+### Subsetting
+
+Selecting parts of an object, commonly with square brackets in R. Matrix subsetting uses separate row and column indices, and the order of supplied positive indices controls the order of selected values.
+
+### Negative index
+
+An index value below zero that specifies a position to omit from a selection in R. Negative indices can be combined to exclude multiple positions, but they cannot be mixed with positive indices within the same indexing dimension.
+
+### Dimension dropping
+
+R's default simplification of some subset results when a dimension has length one. A one-column or one-row matrix may become a vector, so code that depends on matrix shape should use `drop = FALSE`.
+
+### Column-major order
+
+The order R uses to traverse matrix elements: it proceeds down rows within a column, then moves to the next column. Replacement values for a multi-cell matrix selection are assigned according to this traversal order.
+
+### Recycling
+
+The reuse of a shorter vector to fill a longer target in R. For replacement, a value may be repeated across selected cells; when the lengths do not align appropriately, warnings or unintended assignments can result.
+
+### Replacement assignment
+
+An operation using the assignment form of indexing, such as `M[2, ] <- values`, to change selected elements. Correctness depends on target positions, traversal order, and the length and meaning of replacement values.
+
+### Ragged row
+
+A CSV record with a different number of fields from the header. It may indicate malformed input or irregular source data; a profile should report it rather than quietly treating its fields as aligned with the declared columns.
+
+### Descriptive statistic
+
+A summary that characterizes observed data, such as a mean, minimum, or maximum. Such a summary alone does not establish statistical significance, explain a causal mechanism, or justify excluding or changing observations.
