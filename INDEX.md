@@ -9,3 +9,4 @@
 | 2026-10-13 | [From Scraped Records to Honest Visual Evidence](articles/2026-10-13-scraped-data-to-honest-visual-evidence.md) | statistics and reproducible research | <!-- publication:2026-10-13 -->
 | 2026-10-14 | [Reading the Surface: What Black–Scholes–Merton Call Greeks Tell You](articles/2026-10-14-reading-black-scholes-merton-call-greeks.md) | analytics and data quality | <!-- publication:2026-10-14 -->
 | 2026-10-15 | [Editing Matrices Without Losing Track of Their Shape](articles/2026-10-15-editing-matrices-without-losing-track-of-their-shape.md) | analytics and data quality | <!-- publication:2026-10-15 -->
+| 2026-10-16 | [Recommenders Need More Than a Good Guess](articles/2026-10-16-recommenders-need-more-than-a-good-guess.md) | analytics and data quality | <!-- publication:2026-10-16 -->
