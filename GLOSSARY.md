@@ -318,3 +318,46 @@ A CSV record with a different number of fields from the header. It may indicate 
 ### Descriptive statistic
 
 A summary that characterizes observed data, such as a mean, minimum, or maximum. Such a summary alone does not establish statistical significance, explain a causal mechanism, or justify excluding or changing observations.
+
+
+<!-- publication:2026-10-16 -->
+
+## 2026-10-16
+
+Source note: [2026-10-16](articles/2026-10-16-recommenders-need-more-than-a-good-guess.md).
+
+### Recommender system
+
+A system that selects, ranks, filters, or predicts items using information about users, items, context, or their interactions. Its goal is often to help people find useful options, not merely to reproduce a preference score.
+
+### Explicit feedback
+
+A deliberate user-provided signal, such as a star rating or a like. It is comparatively direct evidence of a stated judgment, but users may provide it for only a small subset of the items they encounter.
+
+### Implicit feedback
+
+A behavior recorded by a system, such as a click, purchase, or viewing duration. It can be plentiful, but its interpretation is ambiguous and should not automatically be treated as an explicit preference rating.
+
+### Collaborative filtering
+
+A family of recommendation methods that uses patterns in interactions among users and items. User-user approaches compare people’s behavior; item-item approaches compare how items are treated across users.
+
+### Content-based recommendation
+
+A method that uses item attributes, such as topic or genre, to identify items related to a user’s observed interests. It depends on useful item descriptions and may repeatedly surface similar kinds of content.
+
+### Cold start
+
+The difficulty of making useful recommendations when a new user, item, or system has little interaction history. Popularity, onboarding questions, or item attributes can help, but each relies on different assumptions.
+
+### Root mean squared error
+
+A prediction metric calculated as the square root of the average squared difference between predicted and observed numeric values. It summarizes error magnitude in the target's units, but does not by itself measure discovery or recommendation variety.
+
+### Coverage
+
+A measure of how much of a possible user or item set a recommender actually serves. A system can have accurate predictions for a narrow set of familiar items while offering limited coverage.
+
+### Missing value
+
+A value that is absent or unavailable in a dataset. In recommendation data, an unrecorded rating is generally not equivalent to a negative rating because the user may never have seen or evaluated the item.
