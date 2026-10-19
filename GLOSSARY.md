@@ -361,3 +361,50 @@ A measure of how much of a possible user or item set a recommender actually serv
 ### Missing value
 
 A value that is absent or unavailable in a dataset. In recommendation data, an unrecorded rating is generally not equivalent to a negative rating because the user may never have seen or evaluated the item.
+
+
+<!-- publication:2026-10-19 -->
+
+## 2026-10-19
+
+Source note: [2026-10-19](articles/2026-10-19-homogeneous-systems-solution-sets.md).
+
+### Homogeneous system
+
+A linear system written $AX=0$, with a zero right-hand-side vector. It always has the trivial solution $X=0$, and it may also have nonzero solutions when the columns of $A$ are linearly dependent.
+
+### Trivial solution
+
+The solution $X=0$ of a homogeneous system. It exists for every coefficient matrix because multiplying any matrix by the zero vector gives the zero vector. The term distinguishes it from any nonzero solution.
+
+### Null space
+
+The set of all vectors $Z$ satisfying $AZ=0$. It is a subspace and describes directions in the input that produce no change in the output. For a consistent equation $AX=B$, it supplies all offsets from any particular solution.
+
+### Particular solution
+
+One specific vector $P_0$ satisfying an inhomogeneous equation $AP_0=B$. If the system is consistent, every solution can be written as $P_0+Z$ for some null-space vector $Z$.
+
+### Free variable
+
+A variable associated with a nonpivot column in a row-echelon form. It can be chosen independently, while pivot variables are determined by the equations. A free variable in a homogeneous system yields nontrivial solutions.
+
+### Pivot column
+
+A column containing a leading entry in row-echelon form. Its variable is a pivot variable, determined by the free variables. The number of pivot columns equals the rank of the matrix.
+
+### Rank
+
+The number of pivot columns in a matrix’s row-echelon form. For an $m\times n$ matrix, rank determines the number of free variables in $AX=0$ through the rank-nullity relation: $n-\operatorname{rank}(A)$.
+
+### Consistency
+
+A system is consistent if at least one vector satisfies all its equations. The description of an inhomogeneous solution set as a particular solution plus null-space directions applies only when the system is consistent.
+
+### Bootstrap resampling
+
+A computational procedure that repeatedly samples observations with replacement from the observed data. Here each resample has the original sample size, and its mean contributes to an empirical distribution of bootstrap means.
+
+### Percentile interval
+
+An interval formed from selected lower and upper quantiles of bootstrap estimates. It summarizes resampling variation under the chosen procedure; by itself it is not a significance test or evidence of causation.
