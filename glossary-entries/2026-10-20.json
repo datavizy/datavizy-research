@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-20",
+  "article": "articles/2026-10-20-financial-history-forecasts-uncertainty.md",
+  "terms": [
+    {
+      "term": "Financial forecast",
+      "definition": "An estimate of future financial outcomes based on available information, a model or judgment, and stated assumptions. A forecast is conditional rather than certain, and its usefulness depends on whether its inputs and method suit the decision being considered."
+    },
+    {
+      "term": "Budget",
+      "definition": "A plan that allocates expected revenue, expenses, cash, or investment across activities and periods. Budgets translate assumptions and organizational priorities into operational targets, which can later be compared with actual results."
+    },
+    {
+      "term": "Time series",
+      "definition": "A set of observations indexed in time, often at regular intervals such as weeks, months, or quarters. Ordering matters: trend, seasonality, autocorrelation, and structural breaks can affect analysis and make random resampling or splitting inappropriate."
+    },
+    {
+      "term": "Bootstrap",
+      "definition": "A resampling procedure that repeatedly draws observations with replacement from an observed sample and recalculates a statistic. It approximates the statistic's sampling variability under the assumption that the observed sample is a suitable resampling population."
+    },
+    {
+      "term": "Percentile bootstrap interval",
+      "definition": "An interval formed from selected quantiles of bootstrap statistic estimates. Its endpoints reflect the chosen resampling procedure and quantile convention; it does not automatically describe future individual outcomes or correct a poorly representative sample."
+    },
+    {
+      "term": "Sample standard deviation",
+      "definition": "A measure of spread around the sample mean, calculated as the square root of the sum of squared deviations divided by one less than the number of observations. It describes dispersion in the analyzed sample and is undefined from a single observation."
+    },
+    {
+      "term": "Scenario analysis",
+      "definition": "A comparison of outcomes under alternative sets of assumptions, such as different demand or cost conditions. Scenarios clarify sensitivity to assumptions but are not probabilities unless a probability model is explicitly supplied and justified."
+    },
+    {
+      "term": "Monte Carlo simulation",
+      "definition": "A computational method that repeatedly samples uncertain inputs from specified distributions and passes them through a model. It can show consequences of modeled uncertainty, but results depend on the input distributions, dependencies, and model structure."
+    },
+    {
+      "term": "Forecast validation",
+      "definition": "Evaluation of forecasts against observations not used to fit the model, using a design and error measures appropriate to the task. For time-ordered data, chronological evaluation often better mimics real forecasting than a random split."
+    },
+    {
+      "term": "Reproducibility",
+      "definition": "The ability to rerun an analysis with recorded data, code, and settings and obtain traceable results. Reproducibility helps audit a calculation, but does not establish that the data, assumptions, or method are valid."
+    }
+  ]
+}

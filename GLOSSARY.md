@@ -408,3 +408,42 @@ A computational procedure that repeatedly samples observations with replacement 
 ### Percentile interval
 
 An interval formed from selected lower and upper quantiles of bootstrap estimates. It summarizes resampling variation under the chosen procedure; by itself it is not a significance test or evidence of causation.
+
+
+<!-- publication:2026-10-20 -->
+
+## 2026-10-20
+
+Source note: [2026-10-20](articles/2026-10-20-financial-history-forecasts-uncertainty.md).
+
+### Financial forecast
+
+An estimate of future financial outcomes based on available information, a model or judgment, and stated assumptions. A forecast is conditional rather than certain, and its usefulness depends on whether its inputs and method suit the decision being considered.
+
+### Budget
+
+A plan that allocates expected revenue, expenses, cash, or investment across activities and periods. Budgets translate assumptions and organizational priorities into operational targets, which can later be compared with actual results.
+
+### Time series
+
+A set of observations indexed in time, often at regular intervals such as weeks, months, or quarters. Ordering matters: trend, seasonality, autocorrelation, and structural breaks can affect analysis and make random resampling or splitting inappropriate.
+
+### Bootstrap
+
+A resampling procedure that repeatedly draws observations with replacement from an observed sample and recalculates a statistic. It approximates the statistic's sampling variability under the assumption that the observed sample is a suitable resampling population.
+
+### Percentile bootstrap interval
+
+An interval formed from selected quantiles of bootstrap statistic estimates. Its endpoints reflect the chosen resampling procedure and quantile convention; it does not automatically describe future individual outcomes or correct a poorly representative sample.
+
+### Scenario analysis
+
+A comparison of outcomes under alternative sets of assumptions, such as different demand or cost conditions. Scenarios clarify sensitivity to assumptions but are not probabilities unless a probability model is explicitly supplied and justified.
+
+### Monte Carlo simulation
+
+A computational method that repeatedly samples uncertain inputs from specified distributions and passes them through a model. It can show consequences of modeled uncertainty, but results depend on the input distributions, dependencies, and model structure.
+
+### Forecast validation
+
+Evaluation of forecasts against observations not used to fit the model, using a design and error measures appropriate to the task. For time-ordered data, chronological evaluation often better mimics real forecasting than a random split.
