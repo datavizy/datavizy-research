@@ -447,3 +447,26 @@ A computational method that repeatedly samples uncertain inputs from specified d
 ### Forecast validation
 
 Evaluation of forecasts against observations not used to fit the model, using a design and error measures appropriate to the task. For time-ordered data, chronological evaluation often better mimics real forecasting than a random split.
+
+
+<!-- publication:2026-10-21 -->
+
+## 2026-10-21
+
+Source note: [2026-10-21](articles/2026-10-21-csv-command-line-statistics.md).
+
+### Command-line pipeline
+
+A sequence of programs connected so that one program’s output becomes another’s input. Pipelines make it easy to combine focused transformations, but each step must agree about formats, delimiters, and errors. A successful pipeline does not guarantee that the resulting data or statistical interpretation is correct.
+
+### Mean error
+
+The arithmetic mean of signed differences between paired values. In the article’s example, error is defined as forecast minus observation, so a negative mean indicates forecasts below observations among the analyzed pairs. Reversing the subtraction reverses the sign.
+
+### Mean absolute error
+
+The average of the absolute values of prediction errors. Taking absolute values prevents positive and negative errors from canceling. MAE retains the units of the measurements and describes average error magnitude for the evaluated records.
+
+### Reproducible workflow
+
+A documented sequence of inputs, transformations, and calculations that can be run again to inspect or recreate a result. Reproducibility benefits from preserving source data, recording commands and assumptions, and making decisions about exclusions and conversions explicit.
