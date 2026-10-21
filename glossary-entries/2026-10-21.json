@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-21",
+  "article": "articles/2026-10-21-csv-command-line-statistics.md",
+  "terms": [
+    {
+      "term": "Command-line pipeline",
+      "definition": "A sequence of programs connected so that one program’s output becomes another’s input. Pipelines make it easy to combine focused transformations, but each step must agree about formats, delimiters, and errors. A successful pipeline does not guarantee that the resulting data or statistical interpretation is correct."
+    },
+    {
+      "term": "CSV",
+      "definition": "Comma-separated values is a text format for tabular data, with records and fields separated by delimiters. Quoting rules allow a field to contain delimiters or line breaks. Because of these rules, splitting every line on commas is not a reliable general-purpose CSV parser."
+    },
+    {
+      "term": "Descriptive statistic",
+      "definition": "A numerical summary that describes the data being analyzed, such as a mean, count, or range. It does not by itself quantify uncertainty, establish statistical significance, or show that one variable caused another. Its interpretation depends on the records included and the calculation’s definition."
+    },
+    {
+      "term": "Mean error",
+      "definition": "The arithmetic mean of signed differences between paired values. In the article’s example, error is defined as forecast minus observation, so a negative mean indicates forecasts below observations among the analyzed pairs. Reversing the subtraction reverses the sign."
+    },
+    {
+      "term": "Mean absolute error",
+      "definition": "The average of the absolute values of prediction errors. Taking absolute values prevents positive and negative errors from canceling. MAE retains the units of the measurements and describes average error magnitude for the evaluated records."
+    },
+    {
+      "term": "Root mean squared error",
+      "definition": "The square root of the mean of squared prediction errors. Squaring makes all contributions nonnegative and gives larger errors more influence; taking the square root returns the result to the original measurement units. Its value depends on the records and error definition used."
+    },
+    {
+      "term": "Missing value",
+      "definition": "A field for which the intended measurement or category is unavailable or unspecified. A blank cell may represent missingness, while zero can be a valid observed value. Analysis requires an explicit policy for recognizing and handling missing data."
+    },
+    {
+      "term": "Ragged row",
+      "definition": "A data record with a different number of fields from the header or expected row shape. It may indicate a malformed record, a delimiter or quoting problem, or an unexpected schema change. It should be investigated before column-wise summaries are trusted."
+    },
+    {
+      "term": "Finite numeric value",
+      "definition": "A number that can be represented as a finite floating-point value, rather than a special value such as NaN or positive or negative infinity. Excluding non-finite values from ordinary numeric summaries avoids results that are undefined or misleading."
+    },
+    {
+      "term": "Reproducible workflow",
+      "definition": "A documented sequence of inputs, transformations, and calculations that can be run again to inspect or recreate a result. Reproducibility benefits from preserving source data, recording commands and assumptions, and making decisions about exclusions and conversions explicit."
+    }
+  ]
+}

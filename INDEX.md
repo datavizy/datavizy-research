@@ -12,3 +12,4 @@
 | 2026-10-16 | [Recommenders Need More Than a Good Guess](articles/2026-10-16-recommenders-need-more-than-a-good-guess.md) | analytics and data quality | <!-- publication:2026-10-16 -->
 | 2026-10-19 | [Homogeneous Systems: The Shape of Every Linear Solution](articles/2026-10-19-homogeneous-systems-solution-sets.md) | statistics and reproducible research | <!-- publication:2026-10-19 -->
 | 2026-10-20 | [From Financial History to Forecasts: Making Uncertainty Visible](articles/2026-10-20-financial-history-forecasts-uncertainty.md) | statistics and reproducible research | <!-- publication:2026-10-20 -->
+| 2026-10-21 | [From CSV Rows to Trustworthy Results: Command-Line Statistics That Travel](articles/2026-10-21-csv-command-line-statistics.md) | analytics and data quality | <!-- publication:2026-10-21 -->
