@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-23",
+  "article": "articles/2026-10-23-eigenvectors-directions-matrices.md",
+  "terms": [
+    {
+      "term": "Eigenvector",
+      "definition": "A nonzero vector whose direction is unchanged by multiplication by a particular square matrix, except that the result may be scaled or reversed. Its length is not unique: every nonzero scalar multiple of an eigenvector is also an eigenvector for the same eigenvalue."
+    },
+    {
+      "term": "Eigenvalue",
+      "definition": "The scalar that describes how a matrix scales an associated eigenvector. A positive value preserves direction, a negative value also reverses it, and zero maps that vector to zero. Eigenvalues do not, by themselves, express scientific importance."
+    },
+    {
+      "term": "Identity matrix",
+      "definition": "A square matrix with ones on its main diagonal and zeros elsewhere. Multiplying a vector by the identity leaves it unchanged, so the expression lambda I converts a scalar into a matrix that can be subtracted from another matrix of the same size."
+    },
+    {
+      "term": "Null space",
+      "definition": "The set of vectors that a matrix maps to the zero vector. An eigenvector associated with lambda belongs to the null space of A minus lambda I. For that eigenvector to be nonzero, the shifted matrix must be singular."
+    },
+    {
+      "term": "Characteristic equation",
+      "definition": "The equation det(A minus lambda I) equals zero. Its roots are the eigenvalues of a square matrix. It explains the algebraic condition for eigenvalues, although directly expanding this polynomial is generally not the preferred numerical method for large matrices."
+    },
+    {
+      "term": "Covariance matrix",
+      "definition": "A matrix that collects feature variances on its diagonal and pairwise covariances off the diagonal. Its eigenvectors describe orthogonal directions of variation, and its eigenvalues give the variance along those directions when the matrix is a valid covariance matrix."
+    },
+    {
+      "term": "Principal component analysis",
+      "definition": "A method that finds ordered, orthogonal directions of variation in multivariate data, commonly by decomposing a covariance matrix or using an equivalent computational approach. PCA summarizes variation; it does not by itself establish causation, significance, or scientific relevance."
+    },
+    {
+      "term": "Scree plot",
+      "definition": "A plot of eigenvalues or component variance in descending order. It helps inspect how variance is distributed across components. A sharp decline can suggest a compact representation, but the visual pattern is not a formal proof of a specific number of causes or groups."
+    },
+    {
+      "term": "Singular matrix",
+      "definition": "A square matrix with determinant zero and a nontrivial null space. In the eigenvalue derivation, A minus lambda I must be singular so that it can map a nonzero eigenvector to zero."
+    },
+    {
+      "term": "Singular value decomposition",
+      "definition": "A matrix factorization that represents a matrix using orthogonal directions and nonnegative singular values. It is widely used for dimensionality reduction and compression. Its relationship to eigen-decomposition is close, but the two are distinct procedures with different applicable matrix requirements."
+    }
+  ]
+}
