@@ -470,3 +470,46 @@ The average of the absolute values of prediction errors. Taking absolute values 
 ### Reproducible workflow
 
 A documented sequence of inputs, transformations, and calculations that can be run again to inspect or recreate a result. Reproducibility benefits from preserving source data, recording commands and assumptions, and making decisions about exclusions and conversions explicit.
+
+
+<!-- publication:2026-10-23 -->
+
+## 2026-10-23
+
+Source note: [2026-10-23](articles/2026-10-23-eigenvectors-directions-matrices.md).
+
+### Eigenvector
+
+A nonzero vector whose direction is unchanged by multiplication by a particular square matrix, except that the result may be scaled or reversed. Its length is not unique: every nonzero scalar multiple of an eigenvector is also an eigenvector for the same eigenvalue.
+
+### Eigenvalue
+
+The scalar that describes how a matrix scales an associated eigenvector. A positive value preserves direction, a negative value also reverses it, and zero maps that vector to zero. Eigenvalues do not, by themselves, express scientific importance.
+
+### Identity matrix
+
+A square matrix with ones on its main diagonal and zeros elsewhere. Multiplying a vector by the identity leaves it unchanged, so the expression lambda I converts a scalar into a matrix that can be subtracted from another matrix of the same size.
+
+### Characteristic equation
+
+The equation det(A minus lambda I) equals zero. Its roots are the eigenvalues of a square matrix. It explains the algebraic condition for eigenvalues, although directly expanding this polynomial is generally not the preferred numerical method for large matrices.
+
+### Covariance matrix
+
+A matrix that collects feature variances on its diagonal and pairwise covariances off the diagonal. Its eigenvectors describe orthogonal directions of variation, and its eigenvalues give the variance along those directions when the matrix is a valid covariance matrix.
+
+### Principal component analysis
+
+A method that finds ordered, orthogonal directions of variation in multivariate data, commonly by decomposing a covariance matrix or using an equivalent computational approach. PCA summarizes variation; it does not by itself establish causation, significance, or scientific relevance.
+
+### Scree plot
+
+A plot of eigenvalues or component variance in descending order. It helps inspect how variance is distributed across components. A sharp decline can suggest a compact representation, but the visual pattern is not a formal proof of a specific number of causes or groups.
+
+### Singular matrix
+
+A square matrix with determinant zero and a nontrivial null space. In the eigenvalue derivation, A minus lambda I must be singular so that it can map a nonzero eigenvector to zero.
+
+### Singular value decomposition
+
+A matrix factorization that represents a matrix using orthogonal directions and nonnegative singular values. It is widely used for dimensionality reduction and compression. Its relationship to eigen-decomposition is close, but the two are distinct procedures with different applicable matrix requirements.
