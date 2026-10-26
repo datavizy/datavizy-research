@@ -513,3 +513,38 @@ A square matrix with determinant zero and a nontrivial null space. In the eigenv
 ### Singular value decomposition
 
 A matrix factorization that represents a matrix using orthogonal directions and nonnegative singular values. It is widely used for dimensionality reduction and compression. Its relationship to eigen-decomposition is close, but the two are distinct procedures with different applicable matrix requirements.
+
+
+<!-- publication:2026-10-26 -->
+
+## 2026-10-26
+
+Source note: [2026-10-26](articles/2026-10-26-american-option-delta-hedging-lsm-single-path.md).
+
+### Finite difference
+
+A numerical approximation to a derivative formed from function values at nearby inputs. A centered estimate divides the difference between upper and lower bumped values by the distance between those inputs.
+
+### Least-squares Monte Carlo
+
+A simulation method that estimates continuation value by regressing future cash-flow information on current state variables. For American options, the estimate supports comparisons between exercising now and continuing.
+
+### Continuation value
+
+The estimated value of retaining an option rather than exercising immediately. In an LSM procedure, it is approximated from simulated outcomes and a chosen regression representation of the state.
+
+### Exercise boundary
+
+The region of state space where immediate exercise is preferred to continuation under a valuation model. Estimates near this boundary can be sensitive because small state changes may alter the exercise decision.
+
+### Regression basis
+
+The collection of functions of state variables used as predictors in a regression, such as constants, powers, or interaction terms. Its flexibility affects approximation bias and the risk of fitting simulation noise.
+
+### Hedge rebalancing
+
+Updating positions in instruments such as the underlying asset and a bond as time and market states change. Rebalancing at discrete times leaves exposure to movements between updates.
+
+### In-sample bias
+
+Optimistic apparent performance that can arise when the same simulated observations influence both a fitted strategy and its evaluation. Separate evaluation paths help measure generalization under the modeled process.
