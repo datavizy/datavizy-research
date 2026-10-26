@@ -14,3 +14,4 @@
 | 2026-10-20 | [From Financial History to Forecasts: Making Uncertainty Visible](articles/2026-10-20-financial-history-forecasts-uncertainty.md) | statistics and reproducible research | <!-- publication:2026-10-20 -->
 | 2026-10-21 | [From CSV Rows to Trustworthy Results: Command-Line Statistics That Travel](articles/2026-10-21-csv-command-line-statistics.md) | analytics and data quality | <!-- publication:2026-10-21 -->
 | 2026-10-23 | [Eigenvectors: The Directions a Matrix Leaves Recognizable](articles/2026-10-23-eigenvectors-directions-matrices.md) | analytics and data quality | <!-- publication:2026-10-23 -->
+| 2026-10-26 | [A Hedge Is a Model Under Stress: Estimating American-Option Delta Along One Path](articles/2026-10-26-american-option-delta-hedging-lsm-single-path.md) | analytics and data quality | <!-- publication:2026-10-26 -->

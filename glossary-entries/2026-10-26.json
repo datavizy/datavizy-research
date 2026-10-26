@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-26",
+  "article": "articles/2026-10-26-american-option-delta-hedging-lsm-single-path.md",
+  "terms": [
+    {
+      "term": "Delta",
+      "definition": "The partial derivative of an option value with respect to the underlying asset price, holding other state variables fixed. It is a local sensitivity, not a complete description of risk, especially when prices jump or exercise decisions change."
+    },
+    {
+      "term": "Finite difference",
+      "definition": "A numerical approximation to a derivative formed from function values at nearby inputs. A centered estimate divides the difference between upper and lower bumped values by the distance between those inputs."
+    },
+    {
+      "term": "Least-squares Monte Carlo",
+      "definition": "A simulation method that estimates continuation value by regressing future cash-flow information on current state variables. For American options, the estimate supports comparisons between exercising now and continuing."
+    },
+    {
+      "term": "Continuation value",
+      "definition": "The estimated value of retaining an option rather than exercising immediately. In an LSM procedure, it is approximated from simulated outcomes and a chosen regression representation of the state."
+    },
+    {
+      "term": "Exercise boundary",
+      "definition": "The region of state space where immediate exercise is preferred to continuation under a valuation model. Estimates near this boundary can be sensitive because small state changes may alter the exercise decision."
+    },
+    {
+      "term": "Regression basis",
+      "definition": "The collection of functions of state variables used as predictors in a regression, such as constants, powers, or interaction terms. Its flexibility affects approximation bias and the risk of fitting simulation noise."
+    },
+    {
+      "term": "Hedge rebalancing",
+      "definition": "Updating positions in instruments such as the underlying asset and a bond as time and market states change. Rebalancing at discrete times leaves exposure to movements between updates."
+    },
+    {
+      "term": "In-sample bias",
+      "definition": "Optimistic apparent performance that can arise when the same simulated observations influence both a fitted strategy and its evaluation. Separate evaluation paths help measure generalization under the modeled process."
+    },
+    {
+      "term": "Ragged row",
+      "definition": "A CSV record whose number of parsed fields differs from the number of header columns. A profiler can report its logical record number and exclude it from column-wise summaries to avoid misaligned counts. A quoted field spanning multiple physical lines still belongs to one record."
+    },
+    {
+      "term": "Nonfinite value",
+      "definition": "A numeric representation such as NaN or positive or negative infinity that is not a finite real number. The CSV profiler excludes such values from numeric count, sum, minimum, maximum, and mean."
+    }
+  ]
+}
