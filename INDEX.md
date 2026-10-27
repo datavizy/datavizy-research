@@ -15,3 +15,4 @@
 | 2026-10-21 | [From CSV Rows to Trustworthy Results: Command-Line Statistics That Travel](articles/2026-10-21-csv-command-line-statistics.md) | analytics and data quality | <!-- publication:2026-10-21 -->
 | 2026-10-23 | [Eigenvectors: The Directions a Matrix Leaves Recognizable](articles/2026-10-23-eigenvectors-directions-matrices.md) | analytics and data quality | <!-- publication:2026-10-23 -->
 | 2026-10-26 | [A Hedge Is a Model Under Stress: Estimating American-Option Delta Along One Path](articles/2026-10-26-american-option-delta-hedging-lsm-single-path.md) | analytics and data quality | <!-- publication:2026-10-26 -->
+| 2026-10-27 | [Recursion: Turning Repeated Work into a Smaller Problem](articles/2026-10-27-recursion-smaller-problems.md) | data visualization and scientific communication | <!-- publication:2026-10-27 -->
