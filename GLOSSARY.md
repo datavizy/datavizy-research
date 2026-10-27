@@ -548,3 +548,50 @@ Updating positions in instruments such as the underlying asset and a bond as tim
 ### In-sample bias
 
 Optimistic apparent performance that can arise when the same simulated observations influence both a fitted strategy and its evaluation. Separate evaluation paths help measure generalization under the modeled process.
+
+
+<!-- publication:2026-10-27 -->
+
+## 2026-10-27
+
+Source note: [2026-10-27](articles/2026-10-27-recursion-smaller-problems.md).
+
+### Recursion
+
+A computational technique in which a function solves a problem by calling itself on a reduced or simpler instance. A sound recursive definition specifies when to stop and how results from smaller instances contribute to the current result.
+
+### Base case
+
+A condition that returns an answer without making another recursive call. Base cases define the smallest or terminal inputs the function handles, such as an empty list contributing zero to a sum.
+
+### Recursive case
+
+The part of a recursive definition that handles a nonterminal input by transforming it and invoking the function on smaller subproblems. It must make progress toward a base case for termination to be established.
+
+### Direct recursion
+
+A call pattern in which a function invokes itself in its own body. Direct recursion may involve one call or several calls per invocation, and still requires a valid stopping condition and a termination argument.
+
+### Mutual recursion
+
+A call pattern in which two functions invoke each other, directly or through their definitions. For example, parity tests can alternate between even and odd functions while reducing an integer toward a base case.
+
+### Indirect recursion
+
+A call cycle in which a function eventually calls itself through one or more other functions. Mutual recursion is a common two-function form; longer cycles can involve additional functions and need the same care with termination.
+
+### Termination
+
+The property that an algorithm finishes after a finite amount of work for inputs within its stated domain. A termination argument identifies a quantity that progresses toward a base case, such as a list length that decreases on every call.
+
+### Call stack
+
+Runtime-managed storage for active function calls, including information needed to resume a caller after a nested call returns. Deep recursion consumes stack space and can exceed runtime limits even when an algorithm’s total work is otherwise acceptable.
+
+### Tree traversal
+
+A systematic visit to nodes in a tree structure. Recursive traversal follows child links and combines or processes results; its correctness and cost depend on assumptions such as finite structure and absence of cycles.
+
+### Additive identity
+
+The value zero, which leaves any valid number unchanged under addition: $x+0=x$. It is the natural result for summing an empty collection and lets recursive sums handle missing branches consistently.
