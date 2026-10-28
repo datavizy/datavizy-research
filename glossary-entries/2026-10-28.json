@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-28",
+  "article": "articles/2026-10-28-room-to-move-open-closed-sets.md",
+  "terms": [
+    {
+      "term": "Open set",
+      "definition": "A subset of the real numbers is open when each point in it has a positive-radius neighborhood contained entirely in the set. The radius can vary from point to point, so points near a boundary may have less room than points near the middle."
+    },
+    {
+      "term": "Closed set",
+      "definition": "A set is closed in the real line when its complement in the real line is open. This definition depends on the ambient space: changing the space in which the complement is taken can change which sets count as closed."
+    },
+    {
+      "term": "Neighborhood",
+      "definition": "A neighborhood of a real number is an open interval containing that number. To establish openness, one must find at least one neighborhood around every point of the set that remains within the set."
+    },
+    {
+      "term": "Complement",
+      "definition": "The complement of a set consists of the elements in the stated ambient space that are not in the set. Complement notation makes closedness precise and supports proofs using De Morgan's laws."
+    },
+    {
+      "term": "De Morgan's law",
+      "definition": "A set identity relating complements to unions and intersections. In particular, the complement of an intersection is the union of the complements, which lets us prove that arbitrary intersections of closed sets are closed."
+    },
+    {
+      "term": "Nested intervals",
+      "definition": "A sequence of intervals is nested when each later interval is contained in the previous one. For nonempty closed bounded intervals in the real line, all intervals in such a sequence share at least one point."
+    },
+    {
+      "term": "Completeness",
+      "definition": "The real numbers are complete in the sense that bounded nonempty sets have least upper bounds in the real line. This property supports the nested-interval result and distinguishes the real numbers from the rationals."
+    },
+    {
+      "term": "Percentile bootstrap interval",
+      "definition": "An interval formed by resampling observations with replacement, calculating a statistic for each resample, and taking selected empirical percentiles of those statistics. Its interpretation depends on the data and resampling assumptions."
+    },
+    {
+      "term": "Finite sample",
+      "definition": "A finite sample is a limited collection of observed data values used for analysis. A bootstrap procedure resamples from these observed values, so it does not automatically account for features of the study design that were not encoded in them."
+    },
+    {
+      "term": "Reproducibility",
+      "definition": "Reproducibility is the ability to repeat a computational procedure with recorded inputs and settings and obtain the same result under compatible conditions. Recording a random seed is one useful part of that record, but does not validate the data or scientific assumptions."
+    }
+  ]
+}

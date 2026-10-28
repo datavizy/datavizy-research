@@ -16,3 +16,4 @@
 | 2026-10-23 | [Eigenvectors: The Directions a Matrix Leaves Recognizable](articles/2026-10-23-eigenvectors-directions-matrices.md) | analytics and data quality | <!-- publication:2026-10-23 -->
 | 2026-10-26 | [A Hedge Is a Model Under Stress: Estimating American-Option Delta Along One Path](articles/2026-10-26-american-option-delta-hedging-lsm-single-path.md) | analytics and data quality | <!-- publication:2026-10-26 -->
 | 2026-10-27 | [Recursion: Turning Repeated Work into a Smaller Problem](articles/2026-10-27-recursion-smaller-problems.md) | data visualization and scientific communication | <!-- publication:2026-10-27 -->
+| 2026-10-28 | [Room to Move: Open and Closed Sets on the Real Line](articles/2026-10-28-room-to-move-open-closed-sets.md) | statistics and reproducible research | <!-- publication:2026-10-28 -->
