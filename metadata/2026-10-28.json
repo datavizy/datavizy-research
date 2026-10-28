@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-28",
+  "account": "datavizy",
+  "focus": "Data visualization, statistics, statistical analysis, and reproducible scientific computing",
+  "title": "Room to Move: Open and Closed Sets on the Real Line",
+  "article": "articles/2026-10-28-room-to-move-open-closed-sets.md",
+  "utility_kind": "csv-statistics",
+  "utility_title": "csv-statistics: Reproducible Column Summaries and Bootstrap Intervals",
+  "utility_use_case": "A researcher has a CSV export of repeated instrument readings and wants a compact, reproducible summary for a lab report. Running the command with an explicit seed produces descriptive statistics and a percentile bootstrap mean interval in JSON, while also exposing how many selected cells were missing or unusable. The researcher can retain the command and output alongside the dataset, then investigate data quality or sampling design separately rather than treating the interval as a causal or significance result.",
+  "domain": "statistics and reproducible research",
+  "tags": [
+    "mathematics",
+    "statistics",
+    "data-visualization",
+    "scientific-computing",
+    "reproducibility",
+    "machine-learning"
+  ],
+  "source": {
+    "book_label": "Mathematics of Machine Learning_ Master linear algebra, -- Tivadar Danka -- 2025",
+    "section_title": "11.1.1 Open and closed sets",
+    "book_sha256": "74fc22ef68452493575891d4fe98d3eb29d1e57d64c4fbd09115d36832209253",
+    "excerpt_sha256": "4b78e8e4f0ece42c2c8b6d095d18a3af1f74978bb90aaaf0bc6e32ff4dcdeae3",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_054d99b39f4badb3016ae21c4902c487d09807deedb07e2507",
+    "usage": {
+      "input_tokens": 2751,
+      "input_tokens_details": {
+        "cache_write_tokens": 2748,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3896,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 6647
+    },
+    "generated_at": "2026-10-28T16:01:51.651788+00:00",
+    "estimated_standard_usd": 0.0022231,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0e25ce0a9eb35e4c016ae21c70300087d0852d6d2df6360965",
+      "usage": {
+        "input_tokens": 6318,
+        "input_tokens_details": {
+          "cache_write_tokens": 6315,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1786,
+        "output_tokens_details": {
+          "reasoning_tokens": 1663
+        },
+        "total_tokens": 8104
+      },
+      "reviewed_at": "2026-10-28T16:02:11.373360+00:00",
+      "summary": "Corrected the complexity description to include sorting the input values to compute the median.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "Sorting the bootstrap means costs $O(B\\log B)$; resampling and computing means costs $O(Bn)$.",
+          "new": "Computing the median costs $O(n\\log n)$, sorting bootstrap means costs $O(B\\log B)$, and resampling and computing means costs $O(Bn)$."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0015248000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1486,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}

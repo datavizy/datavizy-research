@@ -595,3 +595,42 @@ A systematic visit to nodes in a tree structure. Recursive traversal follows chi
 ### Additive identity
 
 The value zero, which leaves any valid number unchanged under addition: $x+0=x$. It is the natural result for summing an empty collection and lets recursive sums handle missing branches consistently.
+
+
+<!-- publication:2026-10-28 -->
+
+## 2026-10-28
+
+Source note: [2026-10-28](articles/2026-10-28-room-to-move-open-closed-sets.md).
+
+### Open set
+
+A subset of the real numbers is open when each point in it has a positive-radius neighborhood contained entirely in the set. The radius can vary from point to point, so points near a boundary may have less room than points near the middle.
+
+### Closed set
+
+A set is closed in the real line when its complement in the real line is open. This definition depends on the ambient space: changing the space in which the complement is taken can change which sets count as closed.
+
+### Neighborhood
+
+A neighborhood of a real number is an open interval containing that number. To establish openness, one must find at least one neighborhood around every point of the set that remains within the set.
+
+### Complement
+
+The complement of a set consists of the elements in the stated ambient space that are not in the set. Complement notation makes closedness precise and supports proofs using De Morgan's laws.
+
+### De Morgan's law
+
+A set identity relating complements to unions and intersections. In particular, the complement of an intersection is the union of the complements, which lets us prove that arbitrary intersections of closed sets are closed.
+
+### Nested intervals
+
+A sequence of intervals is nested when each later interval is contained in the previous one. For nonempty closed bounded intervals in the real line, all intervals in such a sequence share at least one point.
+
+### Completeness
+
+The real numbers are complete in the sense that bounded nonempty sets have least upper bounds in the real line. This property supports the nested-interval result and distinguishes the real numbers from the rationals.
+
+### Finite sample
+
+A finite sample is a limited collection of observed data values used for analysis. A bootstrap procedure resamples from these observed values, so it does not automatically account for features of the study design that were not encoded in them.
