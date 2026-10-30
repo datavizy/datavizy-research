@@ -634,3 +634,50 @@ The real numbers are complete in the sense that bounded nonempty sets have least
 ### Finite sample
 
 A finite sample is a limited collection of observed data values used for analysis. A bootstrap procedure resamples from these observed values, so it does not automatically account for features of the study design that were not encoded in them.
+
+
+<!-- publication:2026-10-30 -->
+
+## 2026-10-30
+
+Source note: [2026-10-30](articles/2026-10-30-scores-to-classification-decisions-metrics.md).
+
+### Sigmoid function
+
+The function $\sigma(z)=1/(1+e^{-z})$ maps any finite real score to a value strictly between zero and one. In logistic classification it transforms a linear score into a probability-scale estimate, though calibration is not guaranteed merely by applying the function.
+
+### Classification threshold
+
+A chosen probability or score boundary used to convert a continuous model output into a discrete class. The threshold determines which observations receive positive predictions and therefore changes the confusion-matrix counts and threshold-specific metrics.
+
+### Confusion matrix
+
+A table crossing predicted classes with observed classes. In binary classification it contains true positives, false positives, true negatives, and false negatives, making the kinds of correct and incorrect decisions visible rather than compressing them into one score.
+
+### Precision
+
+The fraction of positive predictions that are actually positive: $TP/(TP+FP)$. It is also called positive predictive value. Precision is undefined when there are no predicted positives, and its observed value depends on the population and class prevalence.
+
+### Recall
+
+The fraction of actual positives identified by the classifier: $TP/(TP+FN)$. Also called sensitivity or true positive rate, it is undefined if there are no actual positives. High recall does not by itself imply few false alarms.
+
+### F1 score
+
+The harmonic mean of precision and recall, $2PR/(P+R)$. It rewards balance between those two measures but does not incorporate true negatives or explicit error costs, so it is not a universal measure of classifier quality.
+
+### ROC AUC
+
+The area under a receiver operating characteristic curve, which plots true positive rate against false positive rate over score thresholds. It summarizes ranking discrimination, not calibration or a particular operating threshold, and does not establish causation.
+
+### Precision-recall curve
+
+A plot of precision against recall as a classification threshold varies. It focuses on positive-class retrieval and is often informative with class imbalance. Its baseline is related to positive prevalence, and area summaries depend on the calculation convention.
+
+### Decile analysis
+
+A ranking procedure that sorts observations by score and partitions them into ten groups. It describes how outcomes concentrate across score bands, but results can depend on tie handling and the rule used to form groups.
+
+### Kolmogorov-Smirnov statistic
+
+A measure of the greatest separation between cumulative distributions of two groups, often positive and negative cases ranked by model score. A report should state whether it uses the maximum signed difference or maximum absolute difference.
