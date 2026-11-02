@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-02",
+  "article": "articles/2026-11-02-csv-visualization-clear-evidence.md",
+  "terms": [
+    {
+      "term": "Scatter plot",
+      "definition": "A graph that places paired values from two variables as points on horizontal and vertical axes. It helps reveal association, clusters, outliers, and possible nonlinear structure, but it does not by itself establish causation or account for dependence among observations."
+    },
+    {
+      "term": "Histogram",
+      "definition": "A chart that groups values of one numeric variable into intervals called bins and displays the count or frequency in each interval. Its shape depends partly on bin selection, and it does not retain the identity of individual observations."
+    },
+    {
+      "term": "Missing data",
+      "definition": "Values that are unavailable or unrecorded for one or more observations. Missingness may be random or related to the measured process, so excluding incomplete rows can change which population or period a visualization represents."
+    },
+    {
+      "term": "Nonfinite value",
+      "definition": "A numeric value that is not a finite real number, such as NaN or positive or negative infinity. Many statistical summaries and plotting procedures cannot interpret such values as ordinary measurements, so they require explicit validation or handling."
+    },
+    {
+      "term": "Correlation",
+      "definition": "A numerical summary of the direction and strength of a specified form of association between variables. Pearson correlation measures linear association and can be affected by outliers; it does not demonstrate a causal relationship."
+    },
+    {
+      "term": "Sample covariance",
+      "definition": "A measure of how two variables vary together in a sample, calculated from paired deviations around their sample means. Its units combine the units of both variables, so its magnitude is less directly interpretable than a unitless correlation."
+    },
+    {
+      "term": "ETL",
+      "definition": "Extract, transform, and load: a data workflow that obtains information from sources, reshapes or cleans it, and writes it to a destination. In reporting, explicit ETL steps make recurring outputs easier to audit and reproduce."
+    },
+    {
+      "term": "Headless renderer",
+      "definition": "A graphics backend that generates image files without opening a graphical window or requiring a desktop display. It is useful for command-line jobs, automated pipelines, and servers, but does not change the statistical meaning of the figure."
+    },
+    {
+      "term": "Reproducibility",
+      "definition": "The ability to regenerate or verify an analysis using documented inputs, code, and relevant software versions. Reproducible plotting includes recording data preparation and commands, not merely saving the final image."
+    },
+    {
+      "term": "Descriptive analysis",
+      "definition": "Methods that summarize or display observed data, such as counts, distributions, or associations. Descriptive results characterize the analyzed observations and do not automatically support population inference, significance claims, predictions, or causal conclusions."
+    }
+  ]
+}
