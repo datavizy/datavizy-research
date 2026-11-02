@@ -681,3 +681,30 @@ A ranking procedure that sorts observations by score and partitions them into te
 ### Kolmogorov-Smirnov statistic
 
 A measure of the greatest separation between cumulative distributions of two groups, often positive and negative cases ranked by model score. A report should state whether it uses the maximum signed difference or maximum absolute difference.
+
+
+<!-- publication:2026-11-02 -->
+
+## 2026-11-02
+
+Source note: [2026-11-02](articles/2026-11-02-csv-visualization-clear-evidence.md).
+
+### Missing data
+
+Values that are unavailable or unrecorded for one or more observations. Missingness may be random or related to the measured process, so excluding incomplete rows can change which population or period a visualization represents.
+
+### Correlation
+
+A numerical summary of the direction and strength of a specified form of association between variables. Pearson correlation measures linear association and can be affected by outliers; it does not demonstrate a causal relationship.
+
+### Sample covariance
+
+A measure of how two variables vary together in a sample, calculated from paired deviations around their sample means. Its units combine the units of both variables, so its magnitude is less directly interpretable than a unitless correlation.
+
+### ETL
+
+Extract, transform, and load: a data workflow that obtains information from sources, reshapes or cleans it, and writes it to a destination. In reporting, explicit ETL steps make recurring outputs easier to audit and reproduce.
+
+### Headless renderer
+
+A graphics backend that generates image files without opening a graphical window or requiring a desktop display. It is useful for command-line jobs, automated pipelines, and servers, but does not change the statistical meaning of the figure.
