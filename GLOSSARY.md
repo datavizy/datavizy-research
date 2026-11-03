@@ -708,3 +708,46 @@ Extract, transform, and load: a data workflow that obtains information from sour
 ### Headless renderer
 
 A graphics backend that generates image files without opening a graphical window or requiring a desktop display. It is useful for command-line jobs, automated pipelines, and servers, but does not change the statistical meaning of the figure.
+
+
+<!-- publication:2026-11-03 -->
+
+## 2026-11-03
+
+Source note: [2026-11-03](articles/2026-11-03-why-calibrate-a-pricing-model.md).
+
+### Market completeness
+
+A market is complete when traded assets can replicate every payoff under consideration. In a finite-state, one-period setting, this means every state-contingent payoff vector can be formed as a linear combination of traded-asset payoff vectors.
+
+### Replication
+
+Replication is constructing a portfolio of traded assets whose payoff matches a target claim in every possible state. If the portfolio can be established for a known cost, no-arbitrage ties the claim’s price to that cost.
+
+### No-arbitrage
+
+A restriction excluding a trading strategy that requires no net investment, has no possibility of loss, and offers a strictly positive gain in at least one possible state. It constrains prices but does not always determine a unique price for unreplicable claims.
+
+### Risk-neutral measure
+
+A probability measure under which appropriately discounted traded asset prices satisfy the martingale condition. In an incomplete market, multiple such measures may be consistent with the same observed traded-asset prices.
+
+### Market incompleteness
+
+A condition in which some possible future payoffs cannot be replicated using the available traded assets. This leaves room for multiple no-arbitrage prices and makes hedging an approximation for unreplicable risks.
+
+### Calibration
+
+The process of choosing model parameters, or a pricing rule within a model class, to make model outputs agree with selected market observations. Results depend on the instruments, quotes, weights, constraints, and fitting method used.
+
+### Model identification
+
+The extent to which observations determine a unique model parameter value or pricing rule. A calibration optimizer returning one answer does not by itself establish identification; alternative settings may fit almost as well.
+
+### Residual hedging error
+
+The mismatch between a claim’s payoff and the payoff of a hedge when exact replication is unavailable. Its size can depend on the instruments traded, rebalancing strategy, model, and realized path.
+
+### Plain-vanilla option
+
+A comparatively standard option contract, such as a call or put with conventional payoff terms. Liquid plain-vanilla prices are often used as calibration inputs because they provide market observations across strikes and maturities.

@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-03",
+  "article": "articles/2026-11-03-why-calibrate-a-pricing-model.md",
+  "terms": [
+    {
+      "term": "Market completeness",
+      "definition": "A market is complete when traded assets can replicate every payoff under consideration. In a finite-state, one-period setting, this means every state-contingent payoff vector can be formed as a linear combination of traded-asset payoff vectors."
+    },
+    {
+      "term": "Replication",
+      "definition": "Replication is constructing a portfolio of traded assets whose payoff matches a target claim in every possible state. If the portfolio can be established for a known cost, no-arbitrage ties the claim’s price to that cost."
+    },
+    {
+      "term": "No-arbitrage",
+      "definition": "A restriction excluding a trading strategy that requires no net investment, has no possibility of loss, and offers a strictly positive gain in at least one possible state. It constrains prices but does not always determine a unique price for unreplicable claims."
+    },
+    {
+      "term": "Risk-neutral measure",
+      "definition": "A probability measure under which appropriately discounted traded asset prices satisfy the martingale condition. In an incomplete market, multiple such measures may be consistent with the same observed traded-asset prices."
+    },
+    {
+      "term": "Market incompleteness",
+      "definition": "A condition in which some possible future payoffs cannot be replicated using the available traded assets. This leaves room for multiple no-arbitrage prices and makes hedging an approximation for unreplicable risks."
+    },
+    {
+      "term": "Calibration",
+      "definition": "The process of choosing model parameters, or a pricing rule within a model class, to make model outputs agree with selected market observations. Results depend on the instruments, quotes, weights, constraints, and fitting method used."
+    },
+    {
+      "term": "Model identification",
+      "definition": "The extent to which observations determine a unique model parameter value or pricing rule. A calibration optimizer returning one answer does not by itself establish identification; alternative settings may fit almost as well."
+    },
+    {
+      "term": "Residual hedging error",
+      "definition": "The mismatch between a claim’s payoff and the payoff of a hedge when exact replication is unavailable. Its size can depend on the instruments traded, rebalancing strategy, model, and realized path."
+    },
+    {
+      "term": "Plain-vanilla option",
+      "definition": "A comparatively standard option contract, such as a call or put with conventional payoff terms. Liquid plain-vanilla prices are often used as calibration inputs because they provide market observations across strikes and maturities."
+    },
+    {
+      "term": "Headless renderer",
+      "definition": "A plotting backend that creates image files without requiring a graphical display. Matplotlib’s `Agg` backend supports automated or server-side figure generation."
+    }
+  ]
+}

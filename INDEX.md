@@ -19,3 +19,4 @@
 | 2026-10-28 | [Room to Move: Open and Closed Sets on the Real Line](articles/2026-10-28-room-to-move-open-closed-sets.md) | statistics and reproducible research | <!-- publication:2026-10-28 -->
 | 2026-10-30 | [From Scores to Decisions: Reading Classification Metrics Without Losing the Plot](articles/2026-10-30-scores-to-classification-decisions-metrics.md) | statistical analysis and exploratory research | <!-- publication:2026-10-30 -->
 | 2026-11-02 | [From CSV to Clear Evidence: Choosing and Automating Data Visualizations](articles/2026-11-02-csv-visualization-clear-evidence.md) | data visualization and scientific communication | <!-- publication:2026-11-02 -->
+| 2026-11-03 | [Why Calibrate a Pricing Model? From Many Possible Prices to Market Fit](articles/2026-11-03-why-calibrate-a-pricing-model.md) | data visualization and scientific communication | <!-- publication:2026-11-03 -->
