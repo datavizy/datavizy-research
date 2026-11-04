@@ -751,3 +751,42 @@ The mismatch between a claim’s payoff and the payoff of a hedge when exact rep
 ### Plain-vanilla option
 
 A comparatively standard option contract, such as a call or put with conventional payoff terms. Liquid plain-vanilla prices are often used as calibration inputs because they provide market observations across strikes and maturities.
+
+
+<!-- publication:2026-11-04 -->
+
+## 2026-11-04
+
+Source note: [2026-11-04](articles/2026-11-04-thinking-in-supersteps-pagerank-pregel.md).
+
+### Pregel
+
+A model for large-scale graph computation in which vertices process messages in repeated supersteps. Each vertex applies a local update rule, may send messages to neighbors, and can become inactive when it has no further work. The framework coordinates execution across the graph.
+
+### Superstep
+
+One round of a Pregel-style computation. Vertices process the messages available for that round, update their state, and send messages for later processing. Repeating supersteps lets information propagate across multiple hops in a graph.
+
+### Message passing
+
+A way to express graph algorithms by having a node send information to neighboring nodes, which then aggregate received information to update their state. PageRank messages carry a sender’s score contribution after it has been divided among outgoing links.
+
+### PageRank
+
+An iterative score for nodes in a directed graph. A node receives contributions from incoming neighbors, with each neighbor’s contribution divided across its outgoing links, alongside a baseline teleportation term. The score depends on graph structure and modeling choices.
+
+### Damping factor
+
+A parameter, usually written as $d$, that controls the proportion of the PageRank update attributed to propagated link contributions. The remaining proportion is assigned to the baseline term. Its value affects the resulting scores and is a modeling choice.
+
+### Outgoing degree
+
+The number of directed edges leaving a node under the graph representation being analyzed. In the basic PageRank recurrence, a sender divides its score by this number so that its contribution is shared among its outgoing neighbors.
+
+### Dangling node
+
+A node with no outgoing edges. The basic link-following PageRank rule cannot distribute this node’s score to destinations, so an implementation needs a defined policy, such as redistributing that score across the graph.
+
+### Convergence tolerance
+
+A threshold used to decide whether successive iterative results are sufficiently close according to a chosen change measure. Falling below the threshold means updates are small under that measure; it does not prove that a model is correct or that a result is useful.
