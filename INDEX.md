@@ -21,3 +21,4 @@
 | 2026-11-02 | [From CSV to Clear Evidence: Choosing and Automating Data Visualizations](articles/2026-11-02-csv-visualization-clear-evidence.md) | data visualization and scientific communication | <!-- publication:2026-11-02 -->
 | 2026-11-03 | [Why Calibrate a Pricing Model? From Many Possible Prices to Market Fit](articles/2026-11-03-why-calibrate-a-pricing-model.md) | data visualization and scientific communication | <!-- publication:2026-11-03 -->
 | 2026-11-04 | [Thinking in Supersteps: PageRank, Pregel, and Reliable Graph Computation](articles/2026-11-04-thinking-in-supersteps-pagerank-pregel.md) | statistical analysis and exploratory research | <!-- publication:2026-11-04 -->
+| 2026-11-05 | [A Collatz Map, a Matrix, and the Shape of a Graph](articles/2026-11-05-collatz-matrices-functional-graphs.md) | statistics and reproducible research | <!-- publication:2026-11-05 -->
