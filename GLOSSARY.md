@@ -790,3 +790,46 @@ A node with no outgoing edges. The basic link-following PageRank rule cannot dis
 ### Convergence tolerance
 
 A threshold used to decide whether successive iterative results are sufficiently close according to a chosen change measure. Falling below the threshold means updates are small under that measure; it does not prove that a model is correct or that a result is useful.
+
+
+<!-- publication:2026-11-05 -->
+
+## 2026-11-05
+
+Source note: [2026-11-05](articles/2026-11-05-collatz-matrices-functional-graphs.md).
+
+### Collatz map
+
+The integer function that sends an even positive integer $k$ to $k/2$ and an odd positive integer $k$ to $3k+1$. Iterating it produces a sequence whose eventual arrival at 1 is the subject of the Collatz conjecture.
+
+### Truncated graph
+
+A graph formed by retaining only a finite selection of states from a larger transition system. In this article the vertices are $1$ through $n$; a transition whose destination exceeds $n$ is omitted, producing a vertex with no in-range outgoing edge.
+
+### Adjacency matrix
+
+A matrix encoding directed edges between vertices. With the convention used here, column $j$ records the destination of the edge from vertex $j$, so an in-range transition contributes a 1 in row $f(j)$.
+
+### Functional graph
+
+A directed graph where each vertex has at most one outgoing edge. Following edges from a vertex either leaves the chosen finite set or eventually repeats a vertex, creating a directed cycle.
+
+### Characteristic polynomial
+
+For a square matrix $A$, the polynomial $\det(xI-A)$ whose roots are the eigenvalues, counted with algebraic multiplicity. For a functional graph matrix, its factors reflect the lengths of contained cycles and the number of vertices outside those cycles.
+
+### Algebraic multiplicity
+
+The multiplicity of an eigenvalue as a root of a matrix’s characteristic polynomial. For eigenvalue zero it counts the total sizes of all zero-eigenvalue Jordan blocks, not necessarily the number of those blocks.
+
+### Nullity
+
+The dimension of a matrix’s kernel, the set of vectors it maps to zero. In Jordan form, the nullity equals the number of Jordan blocks associated with eigenvalue zero.
+
+### Jordan block
+
+A square matrix block with one eigenvalue on its diagonal and, for a standard Jordan block, ones immediately above the diagonal. Its size describes how generalized eigenvectors contribute to the matrix’s structure.
+
+### Reproducible computation
+
+A computational result accompanied by enough information to repeat and audit it, such as input data, code or commands, parameters, and software context. A reproducible finite search verifies its stated range, but does not prove a claim beyond that range.
