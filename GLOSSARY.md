@@ -833,3 +833,38 @@ A square matrix block with one eigenvalue on its diagonal and, for a standard Jo
 ### Reproducible computation
 
 A computational result accompanied by enough information to repeat and audit it, such as input data, code or commands, parameters, and software context. A reproducible finite search verifies its stated range, but does not prove a claim beyond that range.
+
+
+<!-- publication:2026-11-06 -->
+
+## 2026-11-06
+
+Source note: [2026-11-06](articles/2026-11-06-correlation-regression-shape-of-relationship.md).
+
+### Pearson correlation coefficient
+
+The statistic $r$, calculated from paired quantitative observations, that measures the direction and strength of their linear association. It ranges from -1 to 1 and can be strongly affected by outliers.
+
+### Regression
+
+A family of methods that models an outcome in relation to one or more predictors. Regression is directional because the model identifies an outcome, but a fitted association does not by itself establish a causal effect.
+
+### Paired observations
+
+Measurements of two variables linked to the same observational unit, such as two readings from one participant. Correct pairing is essential for calculating and interpreting a correlation.
+
+### Linear association
+
+A pattern in which values tend to vary along a straight-line trend. Pearson's $r$ summarizes this pattern, but may be near zero when a clear nonlinear relationship is present.
+
+### Null hypothesis
+
+A statistical statement used as a reference for a test. In the standard correlation test discussed here, the null specifies that the population linear correlation is zero; it does not assert that every possible kind of association is absent.
+
+### Degrees of freedom
+
+A quantity that identifies the reference $t$ distribution for the usual test of a zero correlation. For the standard test with $N$ paired observations, the degrees of freedom are $N-2$.
+
+### P-value
+
+Under a specified null model and its assumptions, the probability of obtaining a test statistic at least as extreme as the observed one. It is not the probability that the null hypothesis is true, nor a measure of effect size.
