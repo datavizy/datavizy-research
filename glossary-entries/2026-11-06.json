@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-06",
+  "article": "articles/2026-11-06-correlation-regression-shape-of-relationship.md",
+  "terms": [
+    {
+      "term": "Correlation",
+      "definition": "A description of the strength and direction of association between variables. Pearson correlation specifically summarizes linear association and is symmetric in its two variables. Correlation alone does not establish causation or rule out a nonlinear relationship."
+    },
+    {
+      "term": "Pearson correlation coefficient",
+      "definition": "The statistic $r$, calculated from paired quantitative observations, that measures the direction and strength of their linear association. It ranges from -1 to 1 and can be strongly affected by outliers."
+    },
+    {
+      "term": "Regression",
+      "definition": "A family of methods that models an outcome in relation to one or more predictors. Regression is directional because the model identifies an outcome, but a fitted association does not by itself establish a causal effect."
+    },
+    {
+      "term": "Paired observations",
+      "definition": "Measurements of two variables linked to the same observational unit, such as two readings from one participant. Correct pairing is essential for calculating and interpreting a correlation."
+    },
+    {
+      "term": "Linear association",
+      "definition": "A pattern in which values tend to vary along a straight-line trend. Pearson's $r$ summarizes this pattern, but may be near zero when a clear nonlinear relationship is present."
+    },
+    {
+      "term": "Null hypothesis",
+      "definition": "A statistical statement used as a reference for a test. In the standard correlation test discussed here, the null specifies that the population linear correlation is zero; it does not assert that every possible kind of association is absent."
+    },
+    {
+      "term": "Degrees of freedom",
+      "definition": "A quantity that identifies the reference $t$ distribution for the usual test of a zero correlation. For the standard test with $N$ paired observations, the degrees of freedom are $N-2$."
+    },
+    {
+      "term": "P-value",
+      "definition": "Under a specified null model and its assumptions, the probability of obtaining a test statistic at least as extreme as the observed one. It is not the probability that the null hypothesis is true, nor a measure of effect size."
+    },
+    {
+      "term": "Ragged row",
+      "definition": "A CSV data record whose number of parsed fields differs from the number of header fields. It signals a row-shape problem and may prevent reliable interpretation of values by column."
+    },
+    {
+      "term": "Nonfinite value",
+      "definition": "A numeric value such as positive infinity, negative infinity, or NaN that is not finite. The documented CSV profiler excludes such values from numeric summaries, while not counting them as blank missing values."
+    }
+  ]
+}
