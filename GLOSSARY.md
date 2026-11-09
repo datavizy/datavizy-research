@@ -868,3 +868,50 @@ A quantity that identifies the reference $t$ distribution for the usual test of 
 ### P-value
 
 Under a specified null model and its assumptions, the probability of obtaining a test statistic at least as extreme as the observed one. It is not the probability that the null hypothesis is true, nor a measure of effect size.
+
+
+<!-- publication:2026-11-09 -->
+
+## 2026-11-09
+
+Source note: [2026-11-09](articles/2026-11-09-reading-networks-without-losing-the-plot.md).
+
+### Graph
+
+A mathematical representation consisting of nodes and edges. A graph models entities and relationships, and may be directed, weighted, or allow loops and parallel edges depending on its construction.
+
+### Node
+
+An entity represented in a graph, also called a vertex or actor in some fields. Nodes can carry attributes such as type, location, or measured characteristics.
+
+### Edge
+
+A represented relationship between nodes, also called a link, tie, or arc. An edge may be directed or undirected and may carry attributes such as weight, time, or category.
+
+### Degree
+
+The number of edges incident to a node, or, in a simple graph, its number of direct neighbors. Directed graphs distinguish incoming degree from outgoing degree.
+
+### Density
+
+The fraction of all possible edges that are present under a graph’s assumptions. The possible-edge count differs for directed and undirected graphs and commonly excludes loops in simple graphs.
+
+### Path
+
+A sequence of connected edges that does not revisit nodes, except that a closed path may return to its starting node. Shortest-path distance is often measured by the minimum number of edges between nodes.
+
+### Connected component
+
+A maximal set of nodes in which every pair can reach one another by paths. Directed graphs distinguish strong connectivity, which respects edge directions, from weak connectivity, which ignores them.
+
+### Clustering coefficient
+
+A local measure of how many possible edges among a node’s neighbors actually exist. In a simple undirected graph, it is the neighborhood’s edge count divided by the maximum possible count.
+
+### Centrality
+
+A family of measures describing different aspects of a node’s structural position. Degree, closeness, betweenness, and eigenvector centrality answer different questions and should not be treated as interchangeable measures of importance.
+
+### Modularity
+
+A measure comparing the observed fraction of within-community edges with an expected fraction under a specified random-network baseline. Its value depends on the graph and analytical method; it does not prove that communities are uniquely defined.
