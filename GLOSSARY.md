@@ -915,3 +915,42 @@ A family of measures describing different aspects of a node’s structural posit
 ### Modularity
 
 A measure comparing the observed fraction of within-community edges with an expected fraction under a specified random-network baseline. Its value depends on the graph and analytical method; it does not prove that communities are uniquely defined.
+
+
+<!-- publication:2026-11-10 -->
+
+## 2026-11-10
+
+Source note: [2026-11-10](articles/2026-11-10-choose-measurement-before-plot.md).
+
+### Numerical data
+
+Values that represent measured quantities or counts, for which arithmetic comparisons can be meaningful. Numerical data may be discrete, such as event counts, or continuous in principle, such as duration or temperature. Units and measurement precision remain important to interpretation.
+
+### Categorical data
+
+Values that identify groups or labels rather than measured amounts. Categories may be stored as words or numeric codes, but the codes do not acquire arithmetic meaning merely because they are numbers. Summaries such as means of arbitrary category codes are generally not interpretable.
+
+### Ordinal data
+
+Categorical levels with a meaningful order, such as low, medium, and high. The ordering supports comparisons of rank, but does not by itself establish equal distances between adjacent levels. Treating ordinal codes as measurements requires additional justification.
+
+### Discrete data
+
+Numerical values that arise from a countable set, often integers such as numbers of visits or defects. A discrete variable cannot take every possible value in an interval under its measurement definition, though recorded data may be transformed or grouped.
+
+### Continuous data
+
+A numerical quantity that can in principle take arbitrarily fine values over a range. Actual instruments and data formats record finite precision, so observed values are rounded or otherwise limited representations of the underlying measurement.
+
+### Mean
+
+The arithmetic average, calculated as the sum of observations divided by their number. It uses every value and is therefore sensitive to extreme observations. Its units match the measured variable when observations share compatible units.
+
+### Median
+
+The middle value after observations are sorted. With an even number of observations, it is conventionally the mean of the two central values. The median describes central position and is less affected by a single extreme value than the arithmetic mean.
+
+### Sample variance
+
+A measure of squared spread around the sample mean, commonly computed by dividing the sum of squared deviations by $n-1$. This convention estimates population variance under particular sampling assumptions. Its units are the square of the original measurement units.

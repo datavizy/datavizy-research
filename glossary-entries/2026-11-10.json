@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-10",
+  "article": "articles/2026-11-10-choose-measurement-before-plot.md",
+  "terms": [
+    {
+      "term": "Numerical data",
+      "definition": "Values that represent measured quantities or counts, for which arithmetic comparisons can be meaningful. Numerical data may be discrete, such as event counts, or continuous in principle, such as duration or temperature. Units and measurement precision remain important to interpretation."
+    },
+    {
+      "term": "Categorical data",
+      "definition": "Values that identify groups or labels rather than measured amounts. Categories may be stored as words or numeric codes, but the codes do not acquire arithmetic meaning merely because they are numbers. Summaries such as means of arbitrary category codes are generally not interpretable."
+    },
+    {
+      "term": "Ordinal data",
+      "definition": "Categorical levels with a meaningful order, such as low, medium, and high. The ordering supports comparisons of rank, but does not by itself establish equal distances between adjacent levels. Treating ordinal codes as measurements requires additional justification."
+    },
+    {
+      "term": "Discrete data",
+      "definition": "Numerical values that arise from a countable set, often integers such as numbers of visits or defects. A discrete variable cannot take every possible value in an interval under its measurement definition, though recorded data may be transformed or grouped."
+    },
+    {
+      "term": "Continuous data",
+      "definition": "A numerical quantity that can in principle take arbitrarily fine values over a range. Actual instruments and data formats record finite precision, so observed values are rounded or otherwise limited representations of the underlying measurement."
+    },
+    {
+      "term": "Mean",
+      "definition": "The arithmetic average, calculated as the sum of observations divided by their number. It uses every value and is therefore sensitive to extreme observations. Its units match the measured variable when observations share compatible units."
+    },
+    {
+      "term": "Median",
+      "definition": "The middle value after observations are sorted. With an even number of observations, it is conventionally the mean of the two central values. The median describes central position and is less affected by a single extreme value than the arithmetic mean."
+    },
+    {
+      "term": "Sample variance",
+      "definition": "A measure of squared spread around the sample mean, commonly computed by dividing the sum of squared deviations by $n-1$. This convention estimates population variance under particular sampling assumptions. Its units are the square of the original measurement units."
+    },
+    {
+      "term": "Histogram",
+      "definition": "A plot that groups numerical observations into intervals called bins and displays the count or other summary within each bin. It helps inspect distribution shape, but its visual appearance depends on bin choices and it does not retain individual row identities."
+    },
+    {
+      "term": "Scatter plot",
+      "definition": "A display of paired observations as points positioned by two numerical variables. It helps reveal patterns, clusters, and unusual points. Association shown in a scatter plot does not alone establish causation or rule out confounding."
+    }
+  ]
+}
