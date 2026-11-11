@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-11",
+  "article": "articles/2026-11-11-scores-to-classification-decisions.md",
+  "terms": [
+    {
+      "term": "Logit",
+      "definition": "A real-valued score that, for logistic models, is commonly transformed to probability scale with the sigmoid. A logit is not itself a probability and can take any finite real value."
+    },
+    {
+      "term": "Sigmoid",
+      "definition": "The function $1/(1+e^{-z})$, which maps a real-valued input to a value between zero and one. Applying it creates probability-scale scores, but does not by itself ensure that those scores are calibrated probabilities."
+    },
+    {
+      "term": "Classification threshold",
+      "definition": "A chosen score boundary used to convert a continuous model score into a class label. Changing the threshold changes which observations are called positive and usually changes the balance of false positives and false negatives."
+    },
+    {
+      "term": "Confusion matrix",
+      "definition": "A count table comparing actual and predicted classes. For binary classification it records true positives, true negatives, false positives, and false negatives, with row and column orientation stated explicitly."
+    },
+    {
+      "term": "Precision",
+      "definition": "The proportion of predicted positive observations that are actually positive: $TP/(TP+FP)$. It is particularly relevant when false positive predictions carry substantial cost."
+    },
+    {
+      "term": "Recall",
+      "definition": "The proportion of actual positive observations identified as positive: $TP/(TP+FN)$. Also called sensitivity or the true positive rate, it is relevant when missed positive cases matter."
+    },
+    {
+      "term": "F1 score",
+      "definition": "The harmonic mean of precision and recall, $2PR/(P+R)$. It combines those two measures into one value but does not explicitly encode class prevalence or the relative costs of error types."
+    },
+    {
+      "term": "ROC AUC",
+      "definition": "The area under the receiver operating characteristic curve, which plots true positive rate against false positive rate as the threshold varies. It summarizes ranking behavior across thresholds, not calibration or performance at one selected cutoff."
+    },
+    {
+      "term": "Precision-recall curve",
+      "definition": "A curve showing precision against recall as a classification threshold varies. It focuses on positive-class retrieval and is often informative for rare positives; its baseline interpretation depends on positive-class prevalence."
+    },
+    {
+      "term": "Decile analysis",
+      "definition": "A ranking summary that sorts observations by model score and divides them into ten groups. It helps describe concentration of outcomes among high-scored cases, though ties and group construction can affect interpretation."
+    },
+    {
+      "term": "Kolmogorov-Smirnov statistic",
+      "definition": "In score-based binary classification analysis, the maximum absolute separation between cumulative distributions of positive and negative cases. It summarizes ranking separation, but does not alone establish future stability or generalization."
+    }
+  ]
+}
