@@ -954,3 +954,18 @@ The middle value after observations are sorted. With an even number of observati
 ### Sample variance
 
 A measure of squared spread around the sample mean, commonly computed by dividing the sum of squared deviations by $n-1$. This convention estimates population variance under particular sampling assumptions. Its units are the square of the original measurement units.
+
+
+<!-- publication:2026-11-11 -->
+
+## 2026-11-11
+
+Source note: [2026-11-11](articles/2026-11-11-scores-to-classification-decisions.md).
+
+### Logit
+
+A real-valued score that, for logistic models, is commonly transformed to probability scale with the sigmoid. A logit is not itself a probability and can take any finite real value.
+
+### Sigmoid
+
+The function $1/(1+e^{-z})$, which maps a real-valued input to a value between zero and one. Applying it creates probability-scale scores, but does not by itself ensure that those scores are calibrated probabilities.
