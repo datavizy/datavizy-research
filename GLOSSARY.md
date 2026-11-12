@@ -969,3 +969,38 @@ A real-valued score that, for logistic models, is commonly transformed to probab
 ### Sigmoid
 
 The function $1/(1+e^{-z})$, which maps a real-valued input to a value between zero and one. Applying it creates probability-scale scores, but does not by itself ensure that those scores are calibrated probabilities.
+
+
+<!-- publication:2026-11-12 -->
+
+## 2026-11-12
+
+Source note: [2026-11-12](articles/2026-11-12-rust-webassembly-scientific-computing.md).
+
+### WebAssembly (Wasm)
+
+A standardized binary instruction format that compatible runtimes can execute, including browser runtimes. Compiling Rust to Wasm can make computation available in a web application, but does not by itself define a JavaScript interface, guarantee speed, or ensure scientific reproducibility.
+
+### Microservice
+
+A separately deployed software service that communicates with other components through a defined interface, often over a network. It can support independent operation and updates, but also introduces concerns such as validation, versioning, security, and deployment.
+
+### Ordinary least squares
+
+A fitting method that chooses model coefficients to minimize the sum of squared residuals. For a simple line predicting response $y$ from predictor $x$, it yields a slope and intercept, but does not alone justify causal or predictive claims.
+
+### Residual
+
+The difference between an observed response and its fitted or predicted response. For a fitted line, the residual at a particular observation is $y-\hat{y}$; examining residuals can reveal patterns that a single correlation value hides.
+
+### Finite value
+
+A numerical value that is not positive infinity, negative infinity, or NaN. Statistical calculations commonly require finite inputs because nonfinite values can make means, sums, or reported results unusable.
+
+### Paired observation
+
+A matched set of measurements in which each predictor value and response value belong to the same case or experimental unit. Correlation and simple regression require preserving these pairings rather than independently rearranging the columns.
+
+### Centered sums
+
+Sums of products or squared deviations measured relative to variable means. $S_{xx}$ and $S_{yy}$ describe variation in each variable, while $S_{xy}$ describes their joint variation; together they determine the simple least-squares slope and Pearson correlation.
