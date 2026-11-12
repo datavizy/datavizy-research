@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-12",
+  "article": "articles/2026-11-12-rust-webassembly-scientific-computing.md",
+  "terms": [
+    {
+      "term": "WebAssembly (Wasm)",
+      "definition": "A standardized binary instruction format that compatible runtimes can execute, including browser runtimes. Compiling Rust to Wasm can make computation available in a web application, but does not by itself define a JavaScript interface, guarantee speed, or ensure scientific reproducibility."
+    },
+    {
+      "term": "Microservice",
+      "definition": "A separately deployed software service that communicates with other components through a defined interface, often over a network. It can support independent operation and updates, but also introduces concerns such as validation, versioning, security, and deployment."
+    },
+    {
+      "term": "Pearson correlation",
+      "definition": "A dimensionless summary of the direction and strength of linear association between two paired numerical variables. It ranges from -1 to 1 when both variables vary, but it does not establish causation and may not capture nonlinear relationships."
+    },
+    {
+      "term": "Ordinary least squares",
+      "definition": "A fitting method that chooses model coefficients to minimize the sum of squared residuals. For a simple line predicting response $y$ from predictor $x$, it yields a slope and intercept, but does not alone justify causal or predictive claims."
+    },
+    {
+      "term": "Residual",
+      "definition": "The difference between an observed response and its fitted or predicted response. For a fitted line, the residual at a particular observation is $y-\\hat{y}$; examining residuals can reveal patterns that a single correlation value hides."
+    },
+    {
+      "term": "Finite value",
+      "definition": "A numerical value that is not positive infinity, negative infinity, or NaN. Statistical calculations commonly require finite inputs because nonfinite values can make means, sums, or reported results unusable."
+    },
+    {
+      "term": "Paired observation",
+      "definition": "A matched set of measurements in which each predictor value and response value belong to the same case or experimental unit. Correlation and simple regression require preserving these pairings rather than independently rearranging the columns."
+    },
+    {
+      "term": "Reproducibility",
+      "definition": "The ability to inspect and repeat an analysis using documented inputs, code, procedures, and relevant environment details. A compiled executable or summary statistic alone is not enough to explain how data were transformed or which observations were excluded."
+    },
+    {
+      "term": "Centered sums",
+      "definition": "Sums of products or squared deviations measured relative to variable means. $S_{xx}$ and $S_{yy}$ describe variation in each variable, while $S_{xy}$ describes their joint variation; together they determine the simple least-squares slope and Pearson correlation."
+    }
+  ]
+}
