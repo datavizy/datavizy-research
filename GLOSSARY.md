@@ -1004,3 +1004,42 @@ A matched set of measurements in which each predictor value and response value b
 ### Centered sums
 
 Sums of products or squared deviations measured relative to variable means. $S_{xx}$ and $S_{yy}$ describe variation in each variable, while $S_{xy}$ describes their joint variation; together they determine the simple least-squares slope and Pearson correlation.
+
+
+<!-- publication:2026-11-16 -->
+
+## 2026-11-16
+
+Source note: [2026-11-16](articles/2026-11-16-clusters-are-evidence-not-verdicts.md).
+
+### Clustering
+
+An unsupervised procedure that groups observations according to a chosen definition of similarity. It can reveal candidate structure when labels are unavailable, but its output depends on the features, preprocessing, distance, and algorithm used.
+
+### Distance measure
+
+A rule for quantifying dissimilarity between observations, such as Euclidean distance. A distance measure gives meaning to proximity in the analysis, so its suitability depends on the data representation and scientific question.
+
+### Standardization
+
+A transformation that typically subtracts a feature's mean and divides by its standard deviation, putting features on a common scale. It changes their relative influence in distance calculations and should be justified rather than applied automatically.
+
+### Linkage
+
+A rule in hierarchical clustering for defining the distance between two groups of observations. Single, complete, and average linkage summarize between-group distances differently, so they can yield different dendrograms and partitions.
+
+### Dendrogram
+
+A tree-like visualization of the sequence in which a hierarchical clustering method joins observations or groups. Choosing a cut through the tree determines a partition, so a displayed cut is an analytical decision rather than an intrinsic label.
+
+### Robustness
+
+The extent to which an analytical pattern persists under reasonable changes, such as alternative preprocessing choices or subsets of observations. Robustness checks can expose dependence on particular decisions, but do not establish that a pattern is true or meaningful.
+
+### Subset analysis
+
+Repeating an analysis on selected portions of the observations to examine sensitivity to which cases are included. Membership changes can be informative, but comparisons should focus on shared observations because cluster labels are arbitrary.
+
+### Independent data set
+
+A separate collection of observations not used to generate the original clustering interpretation. Testing a proposed pattern on independent data can assess whether it generalizes beyond the sample that suggested the hypothesis.

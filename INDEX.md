@@ -27,3 +27,4 @@
 | 2026-11-10 | [Choose the Measurement Before You Choose the Plot](articles/2026-11-10-choose-measurement-before-plot.md) | data visualization and scientific communication | <!-- publication:2026-11-10 -->
 | 2026-11-11 | [From Scores to Decisions: Reading Classification Models Carefully](articles/2026-11-11-scores-to-classification-decisions.md) | statistics and reproducible research | <!-- publication:2026-11-11 -->
 | 2026-11-12 | [From Rust to the Browser: Making Scientific Computation Portable](articles/2026-11-12-rust-webassembly-scientific-computing.md) | statistical analysis and exploratory research | <!-- publication:2026-11-12 -->
+| 2026-11-16 | [Clusters Are Evidence, Not Verdicts](articles/2026-11-16-clusters-are-evidence-not-verdicts.md) | analytics and data quality | <!-- publication:2026-11-16 -->
