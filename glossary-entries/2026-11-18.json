@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-18",
+  "article": "articles/2026-11-18-business-questions-data-evidence.md",
+  "terms": [
+    {
+      "term": "Business-centric data science",
+      "definition": "An approach to analysis that begins with an organizational objective and asks how data can inform a decision serving that objective. It still requires technical rigor, but treats methods as means rather than ends and makes the intended value explicit."
+    },
+    {
+      "term": "Unit of analysis",
+      "definition": "The entity represented by one observation in an analysis, such as an order, customer, delivery attempt, or day. Defining it prevents accidental mismatches between the rows being counted and the question being asked."
+    },
+    {
+      "term": "Descriptive statistic",
+      "definition": "A numerical summary of observed data, such as a mean, median, proportion, or range. It characterizes the analyzed records but does not by itself explain causes or guarantee that the same pattern applies to a broader population."
+    },
+    {
+      "term": "Percentage point",
+      "definition": "The arithmetic difference between two percentages. A change from 30 percent to 15 percent is a decrease of 15 percentage points; its relative decrease is 50 percent. Keeping these expressions distinct avoids ambiguity."
+    },
+    {
+      "term": "Bootstrap",
+      "definition": "A resampling method that repeatedly draws observations with replacement from an observed dataset and recalculates a statistic. It can describe sampling variation under the empirical distribution, but cannot automatically fix biased or dependent data."
+    },
+    {
+      "term": "Percentile interval",
+      "definition": "An interval formed by selecting specified lower and upper quantiles of a distribution, such as bootstrap estimates. Its interpretation depends on how the estimates were generated and how the quantiles were selected; it is not automatically a causal or exact-coverage statement."
+    },
+    {
+      "term": "Reproducibility",
+      "definition": "The ability to repeat an analysis from recorded inputs, procedures, and settings and obtain compatible results. A recorded random seed supports repeatability for pseudo-random procedures, but does not make the data representative or the analysis valid."
+    },
+    {
+      "term": "Missing data",
+      "definition": "Values absent from a dataset or unavailable for a particular measurement. Missingness may have a systematic cause, so excluding blank records can change the analyzed sample and should be reported and examined."
+    },
+    {
+      "term": "Confounding",
+      "definition": "A situation in which another factor is associated with both an intervention or exposure and an outcome, making a simple comparison difficult to interpret causally. Descriptive differences alone do not rule out confounding."
+    },
+    {
+      "term": "Outcome definition",
+      "definition": "The explicit rule that determines what counts as the measured result, including its units, time window, and treatment of edge cases. Clear definitions make comparisons interpretable and reduce opportunities to change the measure after seeing results."
+    }
+  ]
+}

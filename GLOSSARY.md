@@ -1043,3 +1043,30 @@ Repeating an analysis on selected portions of the observations to examine sensit
 ### Independent data set
 
 A separate collection of observations not used to generate the original clustering interpretation. Testing a proposed pattern on independent data can assess whether it generalizes beyond the sample that suggested the hypothesis.
+
+
+<!-- publication:2026-11-18 -->
+
+## 2026-11-18
+
+Source note: [2026-11-18](articles/2026-11-18-business-questions-data-evidence.md).
+
+### Business-centric data science
+
+An approach to analysis that begins with an organizational objective and asks how data can inform a decision serving that objective. It still requires technical rigor, but treats methods as means rather than ends and makes the intended value explicit.
+
+### Unit of analysis
+
+The entity represented by one observation in an analysis, such as an order, customer, delivery attempt, or day. Defining it prevents accidental mismatches between the rows being counted and the question being asked.
+
+### Percentage point
+
+The arithmetic difference between two percentages. A change from 30 percent to 15 percent is a decrease of 15 percentage points; its relative decrease is 50 percent. Keeping these expressions distinct avoids ambiguity.
+
+### Confounding
+
+A situation in which another factor is associated with both an intervention or exposure and an outcome, making a simple comparison difficult to interpret causally. Descriptive differences alone do not rule out confounding.
+
+### Outcome definition
+
+The explicit rule that determines what counts as the measured result, including its units, time window, and treatment of edge cases. Clear definitions make comparisons interpretable and reduce opportunities to change the measure after seeing results.
