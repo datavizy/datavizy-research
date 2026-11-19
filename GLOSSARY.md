@@ -1070,3 +1070,30 @@ A situation in which another factor is associated with both an intervention or e
 ### Outcome definition
 
 The explicit rule that determines what counts as the measured result, including its units, time window, and treatment of edge cases. Clear definitions make comparisons interpretable and reduce opportunities to change the measure after seeing results.
+
+
+<!-- publication:2026-11-19 -->
+
+## 2026-11-19
+
+Source note: [2026-11-19](articles/2026-11-19-arrays-to-reproducible-visualization.md).
+
+### Array
+
+A structured collection of values arranged along one or more axes, typically with a common data type. Its shape and type govern which numerical operations are valid and how results should be interpreted.
+
+### Shape
+
+A tuple describing the length of an array along each axis. For example, `(3, 4)` identifies three rows and four columns, for 12 elements total.
+
+### Dimension (ndim)
+
+The number of axes in an array. A one-dimensional vector has one axis, while a table-like array commonly has two. Dimension count alone does not explain what each axis represents.
+
+### Reshape
+
+An operation that changes an array's arrangement while preserving its values and total element count. A reshape is only possible when the products of the old and new dimensions match.
+
+### Element-wise operation
+
+An operation applied separately to corresponding array elements, such as adding values in matching positions. It differs from matrix multiplication, which combines values across an axis.
