@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-19",
+  "article": "articles/2026-11-19-arrays-to-reproducible-visualization.md",
+  "terms": [
+    {
+      "term": "Array",
+      "definition": "A structured collection of values arranged along one or more axes, typically with a common data type. Its shape and type govern which numerical operations are valid and how results should be interpreted."
+    },
+    {
+      "term": "Shape",
+      "definition": "A tuple describing the length of an array along each axis. For example, `(3, 4)` identifies three rows and four columns, for 12 elements total."
+    },
+    {
+      "term": "Dimension (ndim)",
+      "definition": "The number of axes in an array. A one-dimensional vector has one axis, while a table-like array commonly has two. Dimension count alone does not explain what each axis represents."
+    },
+    {
+      "term": "Reshape",
+      "definition": "An operation that changes an array's arrangement while preserving its values and total element count. A reshape is only possible when the products of the old and new dimensions match."
+    },
+    {
+      "term": "Element-wise operation",
+      "definition": "An operation applied separately to corresponding array elements, such as adding values in matching positions. It differs from matrix multiplication, which combines values across an axis."
+    },
+    {
+      "term": "Histogram",
+      "definition": "A plot that groups values of one numeric variable into bins and displays a count or other summary for each bin. Its visual shape depends on the binning rule and does not retain pairings with other variables."
+    },
+    {
+      "term": "Scatter plot",
+      "definition": "A plot that places paired numeric observations at horizontal and vertical coordinates. It helps inspect patterns such as clustering or curvature, but does not by itself prove causation."
+    },
+    {
+      "term": "Headless renderer",
+      "definition": "A plotting backend that produces image files without requiring a graphical desktop or opening an interactive window. It is useful in servers and automated jobs, but rendered output still needs visual review."
+    },
+    {
+      "term": "Nonfinite value",
+      "definition": "A numeric value that is not finite, such as NaN or positive or negative infinity. Such values may invalidate summaries or plots and should be handled with an explicit, reported rule."
+    },
+    {
+      "term": "Reproducibility",
+      "definition": "The ability to rerun an analysis with documented inputs, code, and dependencies and obtain traceable results. Reproducibility supports verification, but does not guarantee that assumptions or interpretations are correct."
+    }
+  ]
+}
