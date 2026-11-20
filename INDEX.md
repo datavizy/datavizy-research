@@ -30,3 +30,4 @@
 | 2026-11-16 | [Clusters Are Evidence, Not Verdicts](articles/2026-11-16-clusters-are-evidence-not-verdicts.md) | analytics and data quality | <!-- publication:2026-11-16 -->
 | 2026-11-18 | [From Business Questions to Useful Data Evidence](articles/2026-11-18-business-questions-data-evidence.md) | statistics and reproducible research | <!-- publication:2026-11-18 -->
 | 2026-11-19 | [From Arrays to Evidence: Building a Reproducible Visualization Workflow](articles/2026-11-19-arrays-to-reproducible-visualization.md) | data visualization and scientific communication | <!-- publication:2026-11-19 -->
+| 2026-11-20 | [Eigenvalues as Data Directions: From Matrix Structure to Trustworthy Profiles](articles/2026-11-20-eigenvalues-data-directions-trustworthy-profiles.md) | analytics and data quality | <!-- publication:2026-11-20 -->
