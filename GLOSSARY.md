@@ -1097,3 +1097,22 @@ An operation that changes an array's arrangement while preserving its values and
 ### Element-wise operation
 
 An operation applied separately to corresponding array elements, such as adding values in matching positions. It differs from matrix multiplication, which combines values across an axis.
+
+
+<!-- publication:2026-11-20 -->
+
+## 2026-11-20
+
+Source note: [2026-11-20](articles/2026-11-20-eigenvalues-data-directions-trustworthy-profiles.md).
+
+### Eigenspace
+
+The null space of $A-\lambda I$ for a given eigenvalue $\lambda$. It includes the zero vector and every eigenvector associated with that eigenvalue, so it is a subspace rather than a set containing only eigenvectors.
+
+### Diagonalization
+
+A representation $P^{-1}AP=\Lambda$ in which $P$ is invertible and $\Lambda$ is diagonal. It exists exactly when the matrix has a full set of linearly independent eigenvectors.
+
+### Similarity
+
+Two square matrices are similar when one can be written as $P^{-1}AP$ for an invertible matrix $P$. Similar matrices have the same characteristic polynomial and eigenvalues, though equal eigenvalues alone do not imply similarity.
