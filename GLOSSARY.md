@@ -1116,3 +1116,46 @@ A representation $P^{-1}AP=\Lambda$ in which $P$ is invertible and $\Lambda$ is 
 ### Similarity
 
 Two square matrices are similar when one can be written as $P^{-1}AP$ for an invertible matrix $P$. Similar matrices have the same characteristic polynomial and eigenvalues, though equal eigenvalues alone do not imply similarity.
+
+
+<!-- publication:2026-11-23 -->
+
+## 2026-11-23
+
+Source note: [2026-11-23](articles/2026-11-23-inner-products-geometry-data.md).
+
+### Inner product
+
+A scalar-valued pairing of two vectors that obeys linearity, symmetry in real spaces or conjugate symmetry in complex spaces, and positive definiteness. It generalizes the dot product and supplies the structure needed to define lengths, angles, and orthogonality.
+
+### Induced norm
+
+The length defined from an inner product by $\|x\|=\sqrt{\langle x,x\rangle}$. It measures vector magnitude and satisfies the norm axioms, including the triangle inequality.
+
+### Orthogonality
+
+A relation between vectors $x$ and $y$ for which $\langle x,y\rangle=0$. In Euclidean space this corresponds to perpendicular directions; in more general spaces it means their inner product is zero and does not, by itself, imply linear independence.
+
+### Orthogonal projection
+
+The component of a vector lying along a specified direction or subspace, chosen so that the residual is orthogonal to that target. For a unit vector $u$, projection of $v$ onto its span is $\langle v,u\rangle u$ under the linear-first convention.
+
+### Cauchy–Schwarz inequality
+
+The bound $|\langle x,y\rangle|\leq\|x\|\|y\|$. It constrains how large an inner product can be relative to vector lengths and is central to proving norm and angle properties.
+
+### Parallelogram identity
+
+The equation $\|x+y\|^2+\|x-y\|^2=2\|x\|^2+2\|y\|^2$. Every inner-product norm satisfies it, and in real normed spaces it characterizes norms that arise from an inner product.
+
+### Orthonormal set
+
+A collection of vectors that are pairwise orthogonal and each have norm one. Coordinates and projection coefficients in an orthonormal set are especially simple because each vector’s squared norm is one.
+
+### Cauchy sequence
+
+A sequence whose terms become arbitrarily close to one another as the indices grow. Completeness asks whether every such sequence converges to a point that belongs to the space.
+
+### Hilbert space
+
+A complete inner-product space, meaning it has an inner product and every Cauchy sequence converges within the space. Hilbert spaces extend familiar geometric reasoning to settings such as spaces of functions.
