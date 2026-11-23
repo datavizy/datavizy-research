@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-23",
+  "article": "articles/2026-11-23-inner-products-geometry-data.md",
+  "terms": [
+    {
+      "term": "Inner product",
+      "definition": "A scalar-valued pairing of two vectors that obeys linearity, symmetry in real spaces or conjugate symmetry in complex spaces, and positive definiteness. It generalizes the dot product and supplies the structure needed to define lengths, angles, and orthogonality."
+    },
+    {
+      "term": "Induced norm",
+      "definition": "The length defined from an inner product by $\\|x\\|=\\sqrt{\\langle x,x\\rangle}$. It measures vector magnitude and satisfies the norm axioms, including the triangle inequality."
+    },
+    {
+      "term": "Orthogonality",
+      "definition": "A relation between vectors $x$ and $y$ for which $\\langle x,y\\rangle=0$. In Euclidean space this corresponds to perpendicular directions; in more general spaces it means their inner product is zero and does not, by itself, imply linear independence."
+    },
+    {
+      "term": "Orthogonal projection",
+      "definition": "The component of a vector lying along a specified direction or subspace, chosen so that the residual is orthogonal to that target. For a unit vector $u$, projection of $v$ onto its span is $\\langle v,u\\rangle u$ under the linear-first convention."
+    },
+    {
+      "term": "Cauchy–Schwarz inequality",
+      "definition": "The bound $|\\langle x,y\\rangle|\\leq\\|x\\|\\|y\\|$. It constrains how large an inner product can be relative to vector lengths and is central to proving norm and angle properties."
+    },
+    {
+      "term": "Parallelogram identity",
+      "definition": "The equation $\\|x+y\\|^2+\\|x-y\\|^2=2\\|x\\|^2+2\\|y\\|^2$. Every inner-product norm satisfies it, and in real normed spaces it characterizes norms that arise from an inner product."
+    },
+    {
+      "term": "Orthonormal set",
+      "definition": "A collection of vectors that are pairwise orthogonal and each have norm one. Coordinates and projection coefficients in an orthonormal set are especially simple because each vector’s squared norm is one."
+    },
+    {
+      "term": "Cauchy sequence",
+      "definition": "A sequence whose terms become arbitrarily close to one another as the indices grow. Completeness asks whether every such sequence converges to a point that belongs to the space."
+    },
+    {
+      "term": "Hilbert space",
+      "definition": "A complete inner-product space, meaning it has an inner product and every Cauchy sequence converges within the space. Hilbert spaces extend familiar geometric reasoning to settings such as spaces of functions."
+    },
+    {
+      "term": "Finite numeric value",
+      "definition": "A value successfully parsed as a floating-point number that is neither NaN nor positive or negative infinity. In csv-profile, only finite numeric values contribute to numeric count, mean, minimum, and maximum."
+    }
+  ]
+}
