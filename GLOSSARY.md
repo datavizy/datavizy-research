@@ -1159,3 +1159,42 @@ A sequence whose terms become arbitrarily close to one another as the indices gr
 ### Hilbert space
 
 A complete inner-product space, meaning it has an inner product and every Cauchy sequence converges within the space. Hilbert spaces extend familiar geometric reasoning to settings such as spaces of functions.
+
+
+<!-- publication:2026-11-24 -->
+
+## 2026-11-24
+
+Source note: [2026-11-24](articles/2026-11-24-regression-line-summary-not-story.md).
+
+### Simple linear regression
+
+A model that describes the mean relationship between one predictor and one outcome with a straight line. Its fitted equation has an intercept and a slope, and least squares commonly chooses coefficients by minimizing the sum of squared residuals.
+
+### Predictor
+
+The variable used as an input to describe or predict an outcome in a model. Calling a variable a predictor does not mean it causes the outcome, and its interpretation depends on the study design and the units in which it is measured.
+
+### Outcome
+
+The response or dependent variable whose observed values a model seeks to describe or predict. In a regression equation it is often denoted by y, while x denotes the predictor.
+
+### Slope
+
+The coefficient that gives the fitted change in outcome for a one-unit increase in predictor. Its units are outcome units per predictor unit, and its meaning is limited to the model, data, and range under consideration.
+
+### Intercept
+
+The fitted outcome value at a predictor value of zero. It is part of the line's mathematical definition, but it may have little practical meaning when zero is outside the observed or scientifically relevant predictor range.
+
+### Least squares
+
+A coefficient-fitting method that minimizes the sum of squared differences between observed outcomes and fitted outcomes. Squaring prevents positive and negative errors from canceling and gives larger residuals greater influence.
+
+### Coefficient of determination
+
+Often written as R-squared, this statistic describes the proportion of outcome variation around its mean accounted for by a fitted model under a common squared-error definition. It is not a test of causality, assumptions, or future predictive accuracy.
+
+### Homoscedasticity
+
+The condition that the variance of model errors is approximately constant across predictor values or fitted values. A funnel-shaped residual pattern can signal changing variance, which can affect standard inference procedures.

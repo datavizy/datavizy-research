@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-24",
+  "article": "articles/2026-11-24-regression-line-summary-not-story.md",
+  "terms": [
+    {
+      "term": "Simple linear regression",
+      "definition": "A model that describes the mean relationship between one predictor and one outcome with a straight line. Its fitted equation has an intercept and a slope, and least squares commonly chooses coefficients by minimizing the sum of squared residuals."
+    },
+    {
+      "term": "Predictor",
+      "definition": "The variable used as an input to describe or predict an outcome in a model. Calling a variable a predictor does not mean it causes the outcome, and its interpretation depends on the study design and the units in which it is measured."
+    },
+    {
+      "term": "Outcome",
+      "definition": "The response or dependent variable whose observed values a model seeks to describe or predict. In a regression equation it is often denoted by y, while x denotes the predictor."
+    },
+    {
+      "term": "Slope",
+      "definition": "The coefficient that gives the fitted change in outcome for a one-unit increase in predictor. Its units are outcome units per predictor unit, and its meaning is limited to the model, data, and range under consideration."
+    },
+    {
+      "term": "Intercept",
+      "definition": "The fitted outcome value at a predictor value of zero. It is part of the line's mathematical definition, but it may have little practical meaning when zero is outside the observed or scientifically relevant predictor range."
+    },
+    {
+      "term": "Residual",
+      "definition": "The difference between an observed outcome and the model's fitted value for that observation: observed minus predicted. Patterns in residual plots can reveal structure that a single coefficient or fit statistic conceals."
+    },
+    {
+      "term": "Least squares",
+      "definition": "A coefficient-fitting method that minimizes the sum of squared differences between observed outcomes and fitted outcomes. Squaring prevents positive and negative errors from canceling and gives larger residuals greater influence."
+    },
+    {
+      "term": "Coefficient of determination",
+      "definition": "Often written as R-squared, this statistic describes the proportion of outcome variation around its mean accounted for by a fitted model under a common squared-error definition. It is not a test of causality, assumptions, or future predictive accuracy."
+    },
+    {
+      "term": "Homoscedasticity",
+      "definition": "The condition that the variance of model errors is approximately constant across predictor values or fitted values. A funnel-shaped residual pattern can signal changing variance, which can affect standard inference procedures."
+    },
+    {
+      "term": "Percentile bootstrap interval",
+      "definition": "An interval formed by resampling observed values with replacement, calculating a statistic for each resample, and taking selected quantiles of the resulting statistic distribution. Its usefulness depends on whether resampling the observations reflects the sampling design."
+    }
+  ]
+}
