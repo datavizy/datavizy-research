@@ -1198,3 +1198,46 @@ Often written as R-squared, this statistic describes the proportion of outcome v
 ### Homoscedasticity
 
 The condition that the variance of model errors is approximately constant across predictor values or fitted values. A funnel-shaped residual pattern can signal changing variance, which can affect standard inference procedures.
+
+
+<!-- publication:2026-11-25 -->
+
+## 2026-11-25
+
+Source note: [2026-11-25](articles/2026-11-25-tuning-boosted-trees-without-fooling-yourself.md).
+
+### Boosting
+
+An ensemble-learning approach that builds a sequence of models, with later models directed toward improving the current ensemble's errors. In tree boosting, the final prediction combines contributions from multiple trees. The sequence can fit complex patterns, so its flexibility must be controlled and evaluated on data not used to fit each model.
+
+### Learning rate (eta)
+
+A shrinkage factor that scales the contribution of each new boosting step. A smaller learning rate makes updates more gradual and commonly requires more boosting rounds. Its effect should be evaluated alongside the number of rounds, since comparing learning rates with mismatched training opportunities can be misleading.
+
+### Boosting rounds
+
+The number of sequential boosting steps, often exposed as `n_estimators` or `nrounds`. In tree boosting, each round typically adds a tree to the ensemble. More rounds increase computation, and a small learning rate often calls for more rounds, but additional rounds do not guarantee better validation performance.
+
+### Maximum tree depth
+
+A limit on how many successive decision levels a tree can contain. Greater depth permits more complex rules and interactions, but can also make a tree more able to fit noise. Shallow trees are a common restraint in boosting, not a universal guarantee against overfitting.
+
+### Cross-validation
+
+A procedure that repeatedly trains a model on part of the data and evaluates it on a held-out fold, so each fold is used for validation in turn. It helps compare model configurations, but its results are estimates that depend on the split design and sample. It is not a guarantee of future performance.
+
+### Overfitting
+
+A model's failure to generalize well because it has learned idiosyncrasies of its training data rather than only patterns that persist in new observations. Model complexity, noisy data, and repeated tuning can contribute. Validation and test data help detect it, provided those data remain separated from fitting and selection.
+
+### Subsampling
+
+Using a fraction of records or predictors when fitting trees. In XGBoost, `subsample` controls the fraction of records sampled without replacement, while `colsample_bytree` controls the fraction of predictors used for a tree. Fractions below 1.0 can add variation and help limit overfitting.
+
+### Regularization
+
+A method for discouraging unnecessarily complex model fits by adding a penalty. XGBoost exposes parameters such as `reg_lambda` and `reg_alpha` in Python to control regularization. Defaults can differ by language interface, so reproducible work should record the implementation and parameter values actually used.
+
+### Data leakage
+
+The unintended use of information from validation or test observations during model fitting or selection. It can make evaluation scores overly optimistic. Preprocessing that learns from the full dataset before splitting is one possible source; fit such steps using only each training fold.

@@ -33,3 +33,4 @@
 | 2026-11-20 | [Eigenvalues as Data Directions: From Matrix Structure to Trustworthy Profiles](articles/2026-11-20-eigenvalues-data-directions-trustworthy-profiles.md) | analytics and data quality | <!-- publication:2026-11-20 -->
 | 2026-11-23 | [Inner Products: The Geometry Hiding Inside Data](articles/2026-11-23-inner-products-geometry-data.md) | analytics and data quality | <!-- publication:2026-11-23 -->
 | 2026-11-24 | [A Regression Line Is a Summary, Not a Story](articles/2026-11-24-regression-line-summary-not-story.md) | statistics and reproducible research | <!-- publication:2026-11-24 -->
+| 2026-11-25 | [Tuning Boosted Trees Without Fooling Yourself](articles/2026-11-25-tuning-boosted-trees-without-fooling-yourself.md) | data visualization and scientific communication | <!-- publication:2026-11-25 -->
