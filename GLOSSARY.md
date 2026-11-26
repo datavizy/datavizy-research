@@ -1241,3 +1241,34 @@ A method for discouraging unnecessarily complex model fits by adding a penalty. 
 ### Data leakage
 
 The unintended use of information from validation or test observations during model fitting or selection. It can make evaluation scores overly optimistic. Preprocessing that learns from the full dataset before splitting is one possible source; fit such steps using only each training fold.
+
+
+<!-- publication:2026-11-26 -->
+
+## 2026-11-26
+
+Source note: [2026-11-26](articles/2026-11-26-pca-correlated-signals.md).
+
+### Principal component analysis (PCA)
+
+A linear transformation that represents centered observations along orthogonal directions ordered by variance. PCA can reduce coordinate count when later directions carry little variance, but it does not know which directions are scientifically or operationally important.
+
+### Principal component score
+
+The coordinate obtained by projecting an observation onto a principal direction. A collection of scores provides a lower-dimensional representation when only a selected subset of components is retained.
+
+### Low-rank reconstruction
+
+An approximation formed by projecting observations onto a selected subspace and mapping them back to the original coordinates. Retaining leading PCA directions minimizes squared reconstruction error among subspaces of the same rank for the centered training data.
+
+### Signal subspace
+
+A lower-dimensional set of directions intended to contain the meaningful signal variation. PCA can estimate such a subspace from data, but it cannot identify signal versus noise without assumptions or external validation.
+
+### Non-stationarity
+
+A change in a process's statistical behavior over time, such as changing mean, variance, or covariance. A basis learned from one period may fit another period poorly when the process is non-stationary.
+
+### Feature selection
+
+The process of choosing a subset of candidate variables or derived features for a model. When labels guide the choice, selection must occur within training data to avoid leaking test-set information into evaluation.

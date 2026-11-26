@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-26",
+  "article": "articles/2026-11-26-pca-correlated-signals.md",
+  "terms": [
+    {
+      "term": "Principal component analysis (PCA)",
+      "definition": "A linear transformation that represents centered observations along orthogonal directions ordered by variance. PCA can reduce coordinate count when later directions carry little variance, but it does not know which directions are scientifically or operationally important."
+    },
+    {
+      "term": "Covariance matrix",
+      "definition": "A square matrix whose diagonal entries are feature variances and whose off-diagonal entries describe pairwise covariation. Its eigenvectors provide PCA directions, so choices such as centering and scaling affect the analysis."
+    },
+    {
+      "term": "Eigenvalue",
+      "definition": "For a covariance matrix, an eigenvalue gives the variance along its associated eigenvector. Large eigenvalues indicate directions that explain more sample variation, not necessarily directions that matter most for a particular prediction or scientific objective."
+    },
+    {
+      "term": "Eigenvector",
+      "definition": "A direction that remains on the same line when a matrix acts on it. In PCA, covariance eigenvectors form orthogonal directions; for windowed signals, their entries can be viewed as discrete waveform shapes."
+    },
+    {
+      "term": "Principal component score",
+      "definition": "The coordinate obtained by projecting an observation onto a principal direction. A collection of scores provides a lower-dimensional representation when only a selected subset of components is retained."
+    },
+    {
+      "term": "Low-rank reconstruction",
+      "definition": "An approximation formed by projecting observations onto a selected subspace and mapping them back to the original coordinates. Retaining leading PCA directions minimizes squared reconstruction error among subspaces of the same rank for the centered training data."
+    },
+    {
+      "term": "Signal subspace",
+      "definition": "A lower-dimensional set of directions intended to contain the meaningful signal variation. PCA can estimate such a subspace from data, but it cannot identify signal versus noise without assumptions or external validation."
+    },
+    {
+      "term": "Percentile bootstrap interval",
+      "definition": "An interval formed from selected quantiles of a statistic's bootstrap resampling distribution. Its usefulness depends on the resampling scheme matching the data's sampling units and dependence structure."
+    },
+    {
+      "term": "Non-stationarity",
+      "definition": "A change in a process's statistical behavior over time, such as changing mean, variance, or covariance. A basis learned from one period may fit another period poorly when the process is non-stationary."
+    },
+    {
+      "term": "Feature selection",
+      "definition": "The process of choosing a subset of candidate variables or derived features for a model. When labels guide the choice, selection must occur within training data to avoid leaking test-set information into evaluation."
+    }
+  ]
+}
