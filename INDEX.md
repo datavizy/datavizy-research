@@ -35,3 +35,4 @@
 | 2026-11-24 | [A Regression Line Is a Summary, Not a Story](articles/2026-11-24-regression-line-summary-not-story.md) | statistics and reproducible research | <!-- publication:2026-11-24 -->
 | 2026-11-25 | [Tuning Boosted Trees Without Fooling Yourself](articles/2026-11-25-tuning-boosted-trees-without-fooling-yourself.md) | data visualization and scientific communication | <!-- publication:2026-11-25 -->
 | 2026-11-26 | [When Correlation Makes Data Smaller: PCA for Signals, Noise, and Features](articles/2026-11-26-pca-correlated-signals.md) | statistics and reproducible research | <!-- publication:2026-11-26 -->
+| 2026-11-27 | [From Graphs to Vectors: What Embeddings Keep, and What They Leave Behind](articles/2026-11-27-graphs-to-vectors-embeddings.md) | statistical analysis and exploratory research | <!-- publication:2026-11-27 -->
